@@ -1,4 +1,4 @@
-public class Ejercicio1T04App {
+public class Ejercicio1T4App {
 	public static void main(String[] args) {
 		// Declaración de variables
 		int numero1 = 15;

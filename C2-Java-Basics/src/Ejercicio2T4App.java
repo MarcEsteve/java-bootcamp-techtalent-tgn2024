@@ -1,4 +1,4 @@
-public class Ejercicio2T04App {
+public class Ejercicio2T4App {
     public static void main(String[] args) {
         // Declaración e inicialización de variables
         int N = 5;
