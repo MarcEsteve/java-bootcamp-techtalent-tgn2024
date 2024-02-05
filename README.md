@@ -8,14 +8,9 @@
 
 - [Introducción](#introducción)
 - [Java Básico (POO)](#java-básico-poo)
-- [Getting Started](#comenzar)
+- [CPara comenzar](#comenzar)
   - [Requisitos](#requisitos)
   - [Instalación](#instalación)
-- [Uso](#uso)
-- [Tecnologías](#tecnologías)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
-- [Agradecimientos](#agradecimientos)
 
 ## Introducción
 
@@ -25,7 +20,7 @@ Este repositorio sirve como guía y centro de recursos para desarrolladores Full
 
 - **Ejemplos de Java POO:** Una colección de ejemplos de Programación Orientada a Objetos en Java para ayudarte a entender y dominar conceptos clave.
 
-## Comenzar
+## Para comenzar
 
 ### Requisitos
 
