@@ -6,17 +6,17 @@
 
 ## Tabla de Contenidos
 
-- [Introducción](#introducción)
-- [Java Básico (POO)](#java-básico-poo)
-- [CPara comenzar](#comenzar)
+- [C1 - Introducción](#introducción)
+- [C2 - Java Básico (POO))](#java-básico-poo)
+- [Para comenzar](#comenzar)
   - [Requisitos](#requisitos)
   - [Instalación](#instalación)
 
-## Introducción
+## C1 - Introducción
 
 Este repositorio sirve como guía y centro de recursos para desarrolladores Fullstack Web, centrándose en Java POO y Java para el desarrollo del lado del servidor. Ya seas un principiante que busca aprender los conceptos básicos o un desarrollador experimentado en busca de ejemplos avanzados, este repositorio es para ti.
 
-## Java Básico (POO)
+## C2 - Java Básico (POO)
 
 - **Ejemplos de Java POO:** Una colección de ejemplos de Programación Orientada a Objetos en Java para ayudarte a entender y dominar conceptos clave.
 
