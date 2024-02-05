@@ -1,6 +1,6 @@
-# Repositorio de Java para el Bootcamp Tech Talent de Fullstack Web Developers
+# Repositorio de JAVA
 
-## Descripción
+## Bootcamp Tech Talent de Fullstack Web Developers
 
 ¡Bienvenido al repositorio de Desarrollador Fullstack Web! Este proyecto se centra en proporcionar recursos y ejemplos completos para el desarrollo web fullstack, con un énfasis particular en la Programación Orientada a Objetos (POO) en Java y Java para el desarrollo del lado del servidor (backend).
 
