@@ -4,15 +4,7 @@
 
 ## Bootcamp Tech Talent de Fullstack Web Developers
 
-¡Bienvenido al repositorio de Desarrollador Fullstack Web! Este proyecto se centra en proporcionar recursos y ejemplos completos para el desarrollo web fullstack, con un énfasis particular en la Programación Orientada a Objetos (POO) en Java y Java para el desarrollo del lado del servidor (backend).
-
-## Tabla de Contenidos
-
-- [C1 - Introducción](#introducción)
-- [C2 - Java Básico (POO))](#java-básico-poo)
-- [Para comenzar](#comenzar)
-  - [Requisitos](#requisitos)
-  - [Instalación](#instalación)
+¡Bienvenido al repositorio de Desarrollador Fullstack Web! Este proyecto se centra en proporcionar recursos y ejemplos completos para el desarrollo web fullstack, con un énfasis particular en la Programación Orientada a Objetos (POO) en Java.
 
 ## C1 - Introducción
 
@@ -21,8 +13,6 @@ Este repositorio sirve como guía y centro de recursos para desarrolladores Full
 ## C2 - Java Básico (POO)
 
 - **Ejemplos de Java POO:** Una colección de ejemplos de Programación Orientada a Objetos en Java para ayudarte a entender y dominar conceptos clave.
-
-## Para comenzar
 
 ### Requisitos
 
