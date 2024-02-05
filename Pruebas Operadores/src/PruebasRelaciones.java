@@ -32,6 +32,8 @@ public class PruebasRelaciones {
 	        System.out.println("¿20 es mayor que 10? " +resultado6);
 	        System.out.println("¿10 es mayor o igual que 10? " +resultado7);
 	        System.out.println("¿10 es mayor o igual a 20? " +resultado8);
+	        System.out.printf("¿%d es igual a %d? %b\n", operador1, operador2, resultado1);
+
 
 	    }
 
