@@ -1,5 +1,5 @@
 
-public class PruebaIncremento {
+public class UD4PruebaIncremento {
 
 	public static void main(String[] args) {
 		

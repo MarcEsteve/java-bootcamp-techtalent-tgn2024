@@ -1,5 +1,5 @@
 
-public class PruebasRelaciones {
+public class UD4PruebasRelaciones {
 
 	    public static void main(String[] args) {
 	        // TODO Auto-generated method stub

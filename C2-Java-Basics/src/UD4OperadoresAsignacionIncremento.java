@@ -1,4 +1,4 @@
-public class OperadoresAsignacionIncremento {
+public class UD4OperadoresAsignacionIncremento {
 	public static void main(String[] args) {
 		// Declaración de variables
 		int numero = 5;

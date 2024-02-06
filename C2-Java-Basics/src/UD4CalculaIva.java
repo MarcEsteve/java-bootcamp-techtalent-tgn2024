@@ -1,5 +1,5 @@
 
-public class CalculaIva {
+public class UD4CalculaIva {
 
 	public static void main(String[] args) {
 		int precioProducto = 30;
