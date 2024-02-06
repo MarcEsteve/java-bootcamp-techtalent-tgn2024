@@ -22,5 +22,6 @@ public class UD5mainApp {
 		System.out.println("Tu edad es " + num);
 
 	}
+	
 
 }
