@@ -21,6 +21,8 @@ public class UD5MetodosStringApp {
 		String upperCaseStr = str.toUpperCase(); // "HOLA MUNDO"
 		String lowerCaseStr = str.toLowerCase(); // "hola mundo"
 		
+		String replacedStr = str.replace('o', 'x'); // "Hxla Mundx"
+		
 		//Ejercicio cálculo del último caracter del String
 		char ultimoChar = str.charAt(str.length()-1);
 		
