@@ -2,7 +2,7 @@
 public class UD4PruebasRelaciones {
 
 	    public static void main(String[] args) {
-	        // TODO Auto-generated method stub
+ 
 	        int operador1=10;
 	        int operador2=20;
 	        int operador3=10;
