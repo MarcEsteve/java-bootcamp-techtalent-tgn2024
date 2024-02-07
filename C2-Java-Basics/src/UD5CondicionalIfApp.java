@@ -22,10 +22,11 @@ public class UD5CondicionalIfApp {
 			System.out.println("Este es el último texto");
 		}
 
-		//Ejercicio horas del dia
+		//Ejercicio horas del dia (formato 24h)
 		//Variable "hora" de tipo entero con rango del 0 
-		//(12 de la noche) al 23 las 11 de la noche
-		//Con un condicional que diga buenos dias, buenas tardes y buenas noches
+		//(12 de la noche) al 23 las (11 de la noche)
+		//Con un condicional que diga buenos dias, 
+		//buenas tardes y buenas noches
 		if ((hora>=1)&& (hora<=11)){
 			System.out.println("buenos dias");
 		} else if((hora>=12)&& (hora<=19)) {
@@ -34,7 +35,20 @@ public class UD5CondicionalIfApp {
 			System.out.println("buenas noches");
 		}
 		
-		
+		//Anidación de condicionales
+		int edad = 18;
+		boolean esEstudiante = true;
+
+		if (edad >= 18) {
+		    if (esEstudiante) {
+		        System.out.println("Tienes 18 años o más y eres estudiante.");
+		    } else {
+		        System.out.println("Tienes 18 años o más pero no eres estudiante.");
+		    }
+		} else {
+		    System.out.println("Eres menor de 18 años.");
+		}
+
 	}
 
 }
