@@ -6,6 +6,7 @@ public class UD5CondicionalIfApp {
 		int precio=90;
 		int hora=11;
 		
+		//Un bloque condicional
 		if (precio>100) {
 			System.out.println("El precio es mayor que 100");
 		} else if((precio <=100) && (precio>=80)) {
@@ -13,11 +14,11 @@ public class UD5CondicionalIfApp {
 		} else  {
 			System.out.println("El precio es inferior o igual a 80");
 		}
-		
+		//Otro bloque condicional
 		if (precio>20) {
 			System.out.println("Este es el penúltimo texto");
 		}
-		
+		//Tercer bloque condicional
 		if (precio>80) {
 			System.out.println("Este es el último texto");
 		}
