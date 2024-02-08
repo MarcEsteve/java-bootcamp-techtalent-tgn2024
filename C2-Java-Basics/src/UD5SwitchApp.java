@@ -76,7 +76,59 @@ public class UD5SwitchApp {
 		//y asignarselo a una variable que se compare en el switch y
 		//nos saludo en base al valor de esta hora.
 		
-		
-		
+		Date fechAlex = new Date();
+	    SimpleDateFormat formatoHora = new SimpleDateFormat("h");//Elegimos qué escoger de la fecha entera 
+	    int horaNum = Integer.parseInt(formatoHora.format(fechAlex)); 
+
+	    switch (horaNum) {
+	        case 9:
+	            System.out.println("Son las 9.");
+	            break;
+	        case 10:
+	            System.out.println("Son las 10.");
+	            break;
+	        default:
+	            System.out.println("Son las " +horaNum+ ".");
+	     }
+		//Jessica
+	    Date date = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("h");
+        int HoraActual = Integer.parseInt(dateFormat.format(date));
+        String horaHoy;
+
+        switch (HoraActual) {
+            case 9:
+                horaHoy = "09:00";
+                break;
+            case 10:
+                horaHoy = "10:00";
+                break;
+            case 11:
+                horaHoy = "11:00";
+                break;
+            default:
+                horaHoy = "Hora incorrecta";
+        }
+        System.out.println("La hora actual es " + horaHoy);
+        
+        //Aurora
+        
+        Date fechAurora = new Date(); 
+        SimpleDateFormat formatoAurHora= new SimpleDateFormat("HH");
+        int HoraDia = Integer.parseInt(formatoAurHora.format(fechAurora));
+
+        String saludo;
+
+        switch(HoraDia) {
+            case 9: 
+            saludo= "Buenos días (un 9 como case)"; 
+            break; 
+            case 10: 
+            saludo ="Buenas tardes (10 de case)"; 
+            break;
+            default: 
+            saludo= "No es la hora";
+        }
+        System.out.println(saludo);
 	}
 }
