@@ -114,6 +114,7 @@ public class UD5SwitchApp {
         //Aurora
         
         Date fechAurora = new Date(); 
+        System.out.println(fechAurora);
         SimpleDateFormat formatoAurHora= new SimpleDateFormat("HH");
         int HoraDia = Integer.parseInt(formatoAurHora.format(fechAurora));
 
