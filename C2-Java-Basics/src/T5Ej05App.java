@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class UD5Ej05App {
+public class T5Ej05App {
 
 	public static void main(String[] args) {
 
