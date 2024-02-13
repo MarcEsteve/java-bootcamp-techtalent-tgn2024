@@ -14,5 +14,4 @@ public class T5Ej06App {
 		 		+ "El precio final es: " + precio);
 
 	}
-
 }
