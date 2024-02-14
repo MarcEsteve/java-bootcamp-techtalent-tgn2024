@@ -1,4 +1,4 @@
-package UD4JavaBasics;
+package UD4JavaBasics.teoria;
 public class UD4OperadoresAsignacionIncremento {
 	public static void main(String[] args) {
 		// Declaración de variables

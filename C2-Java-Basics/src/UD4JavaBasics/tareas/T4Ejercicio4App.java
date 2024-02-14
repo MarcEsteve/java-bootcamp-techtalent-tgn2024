@@ -1,4 +1,4 @@
-package UD4JavaBasics;
+package UD4JavaBasics.tareas;
 public class T4Ejercicio4App {
     public static void main(String[] args) {
         // Declaración e inicialización de la variable N
