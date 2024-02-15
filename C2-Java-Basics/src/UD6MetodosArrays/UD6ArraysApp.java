@@ -28,7 +28,7 @@ public class UD6ArraysApp {
 		//Recorrer arrays, propiedad lenght indica tamaño del array
 		
 		for (int i=0; i<num1.length;i++) {
-			//System.out.println(num1[i]);
+			System.out.println(num1[i]);
 		}
 		
 		//Asigna a todas las posiciones valores de 5 en 5
