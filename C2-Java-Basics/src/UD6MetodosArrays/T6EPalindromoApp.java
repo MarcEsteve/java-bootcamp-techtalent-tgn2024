@@ -22,7 +22,7 @@ public class T6EPalindromoApp {
 			}
 		}
 //		System.out.println(palinReverse);
-		
+		imprimePalindromo(palin,palinReverse);
 
 	}
 	
