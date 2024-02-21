@@ -14,7 +14,7 @@ public class T6Ej09App {
         // Recorre el array para asignarle valor random
         for (int i = 0; i < array9.length; i++) {
             array9[i]=(int) (Math.random()*10);
-
+            
         }
         // Recorre el array para mostrar los valores
         for (int i = 0; i < array9.length; i++) {
