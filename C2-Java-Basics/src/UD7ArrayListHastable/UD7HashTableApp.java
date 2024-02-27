@@ -60,6 +60,10 @@ public class UD7HashTableApp {
         edadDePedro = edadesAlumnos.get("Pedro"); //Ahora 29
         System.out.println("Edad de Pedro: " + edadDePedro);
         
-        
+//		  Ejercicio HASHMAP / HASTABLE
+//        A través de un método que realice los put() para asinar key=>value
+//        pedirle al usuario por INPUT estos dos parámetros
+//        para crear dos alumnos más en edadesAlumnos
+         
     }
 }
