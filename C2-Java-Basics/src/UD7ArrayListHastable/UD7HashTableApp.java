@@ -62,7 +62,7 @@ public class UD7HashTableApp {
         
 //		  Ejercicio HASHMAP / HASTABLE
 //        A través de un método que realice los put() para asinar key=>value
-//        pedirle al usuario por INPUT estos dos parámetros
+//        pedirle al usuario por INPUT estos dos parámetros clave y valor
 //        para crear dos alumnos más en edadesAlumnos
          
     }
