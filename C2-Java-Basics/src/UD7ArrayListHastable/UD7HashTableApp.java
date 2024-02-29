@@ -7,7 +7,10 @@ public class UD7HashTableApp {
     public static void main(String[] args) {
         // Crear un HashMap con clave de tipo String y valor de tipo Integer
         HashMap<String, Integer> edadesAlumnos = new HashMap<>();
-
+        
+        //Arrays normales para capturar la misma información:
+        int edades[]= {25,13 ,39 , 46};
+        String alumnos[]= {"Pepe", "Juan", "Rogelio","Manolo"};
 
         // Agregar elementos al HashMap
         edadesAlumnos.put("Juan", 25);

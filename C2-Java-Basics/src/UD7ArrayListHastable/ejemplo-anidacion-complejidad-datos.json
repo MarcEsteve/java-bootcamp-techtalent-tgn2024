@@ -1,0 +1,37 @@
+{
+  "libros": [
+    {
+      "titulo": "Cien años de soledad",
+      "autor": {
+        "nombre": "Gabriel García Márquez",
+        "nacionalidad": "Colombiano",
+        "fecha_nacimiento": "1927-03-06",
+        "premios": ["Premio Nobel de Literatura", "Premio Rómulo Gallegos"]
+      },
+      "publicacion": "1967-05-30",
+      "genero": ["Realismo mágico", "Novela latinoamericana"],
+      "editorial": "Editorial Sudamericana",
+      "paginas": 432,
+      "idioma": "Español",
+      "ISBN": "978-84-9759-462-5",
+      "sinopsis": "La novela narra la historia de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo."
+    },
+    {
+      "titulo": "1984",
+      "autor": {
+        "nombre": "George Orwell",
+        "nacionalidad": "Británico",
+        "fecha_nacimiento": "1903-06-25",
+        "fecha_defuncion": "1950-01-21",
+        "premios": ["Premio Hugo Retro-Hugo"]
+      },
+      "publicacion": "1949-06-08",
+      "genero": ["Distopía", "Ciencia ficción"],
+      "editorial": "Secker & Warburg",
+      "paginas": 328,
+      "idioma": "Inglés",
+      "ISBN": "978-0-452-28423-4",
+      "sinopsis": "La novela presenta un futuro distópico en el que el gobierno totalitario controla todos los aspectos de la vida de las personas."
+    }
+  ]
+}
