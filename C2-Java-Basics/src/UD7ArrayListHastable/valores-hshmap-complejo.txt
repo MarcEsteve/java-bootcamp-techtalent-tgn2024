@@ -1,0 +1,13 @@
+{
+    direccion={
+        contacto={
+            telefono=123-456-789, 
+            email=juan@example.com
+        }, 
+        codigoPostal=12345, 
+        ciudad=Ciudad Capital, 
+        calle=Calle Principal
+    }, 
+    nombre=Juan, 
+    edad=30
+}
