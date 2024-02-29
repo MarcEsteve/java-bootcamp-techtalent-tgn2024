@@ -23,12 +23,12 @@ public class T6Ej11App {
 		int array1[] = new int[tam];
 		int array2[] = new int[tam];
 		int multiplicado[] = new int[tam];
-		boolean yaAsignado[] = new boolean[tam];
+//		boolean yaAsignado[] = new boolean[tam];
 
-		rellenararray1(array1, tam, coleccion1);
+		rellenarArray1(array1, tam, coleccion1);
 		//rellenararray2(array1, array2, yaAsignado, tam, coleccion2);
-		rellenarArray2(array1, array2);
-		rellenararray3(array1, array2, multiplicado, tam, coleccion3);
+		rellenarArray2(array1, array2, tam, coleccion2);
+		rellenarArray3(array1, array2, multiplicado, tam, coleccion3);
 
 		JOptionPane.showMessageDialog(null,
 				"La primera colección contiene: \n - - " 
@@ -37,18 +37,17 @@ public class T6Ej11App {
 						+ "multiplicaciones dan: \n - - " + coleccion3 + " - - ");
 	}
 	//Primer array con randoms
-	public static void rellenararray1(int[] array, int tam, 
-			StringBuilder coleccion1) {
-		int min = 0;
-		int max = 10;
-		for (int i = 0; i < tam; i++) {
-			int alea = (int) ((Math.random() * (max - min)) + min);
-			min += 10;
-			max += 10;
-			array[i] = alea;
-			coleccion1.append(alea + " ");
-		}
-	}
+	public static void rellenarArray1(int[] array, int tam, StringBuilder coleccion1) {
+        int min = 0;
+        int max = 10;
+        for (int i = 0; i < tam; i++) {
+            int alea = (int) ((Math.random() * (max - min)) + min);
+            min += 10;
+            max += 10;
+            array[i] = alea;
+            coleccion1.append(alea + " ");
+        }
+    }
 	//Reordenar en el segundo en vez de tener en cuenta un factor del primero
 //	public static void rellenararray2(int[] array, int[] aleatorio, 
 	//boolean[] yaAsignado, int tam,
@@ -64,16 +63,25 @@ public class T6Ej11App {
 //		}
 //	}
 	
-	public static void rellenarArray2(int[] a1, int[] a2) {
-        Random random= new Random(); 
-        
-        for (int i = 0; i < a2.length; i++) {
-            a2[i]= a1[i]*random.nextInt(100);
+    public static void rellenarArray2(int[] array, int[] aleatorio, int tam,
+            StringBuilder coleccion2) {
+        for (int i = 0; i < tam; i++) {
+            aleatorio[i] = (int) (Math.random() * (1 + array[i]) - 1);
+            coleccion2.append(aleatorio[i] + " ");
         }
     }
 	
+//	public static void rellenarArray2(int[] a1, int[] a2) {
+//        Random random= new Random(); 
+//        
+//        for (int i = 0; i < a2.length; i++) {
+//            a2[i]= a1[i]*random.nextInt(100);
+//        }
+//    }
+	
+	
 	//Rellenar el tercer ARRAY con la multiplicación de ambos anteriores
-	public static void rellenararray3(int[] array, int[] aleatorio, 
+	public static void rellenarArray3(int[] array, int[] aleatorio, 
 			int[] multiplicado, int tam,
 			StringBuilder coleccion3) {
 		for (int i = 0; i < tam; i++) {
