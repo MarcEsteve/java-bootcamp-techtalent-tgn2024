@@ -100,5 +100,13 @@ public class T6Ej12App {
 		return arrayFinal;
 
 	}
-
+	
+	// Imprime por consola los valores del array que teminan en n
+    public static void mostrarArrayDigito(int[] a, int n) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 10 == n) {
+                System.out.println("a[" + i + "] : " + a[i]);
+            }
+        }
+    }
 }
