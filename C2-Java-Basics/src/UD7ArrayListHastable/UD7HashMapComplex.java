@@ -31,5 +31,18 @@ public class UD7HashMapComplex {
 
         // Imprimir el HashMap complejo
         System.out.println(complexHashMap);
+        
+     // Obtener el HashMap de dirección
+        Map<String, Object> direccionVar = (Map<String, Object>) complexHashMap.get("direccion");
+
+        // Obtener el HashMap de contacto dentro del HashMap de dirección
+        Map<String, Object> persona = (Map<String, Object>) direccionVar.get("contacto");
+
+        // Obtener el valor del correo electrónico desde el HashMap de contacto
+        String email = (String) persona.get("email");
+
+        // Imprimir el correo electrónico
+        System.out.println("Correo electrónico: " + email);
+
     }
 }
