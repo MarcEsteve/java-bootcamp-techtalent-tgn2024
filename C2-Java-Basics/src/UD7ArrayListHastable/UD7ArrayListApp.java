@@ -56,6 +56,16 @@ public class UD7ArrayListApp {
 		listaNumeros.clear();
 		System.out.println(listaNumeros.toString());
 		
+		//Ejemplo borrar de una lista
+		ArrayList<String> frutas = new ArrayList<>();
+		lista.add("Manzanas");
+		lista.add("Limones");
+		lista.add("Peras");
+		lista.add("Naranjas");
+		
+		int indexFruta= frutas.indexOf("Peras"); //2
+		frutas.remove(indexFruta);
+		
 	}
 
 }
