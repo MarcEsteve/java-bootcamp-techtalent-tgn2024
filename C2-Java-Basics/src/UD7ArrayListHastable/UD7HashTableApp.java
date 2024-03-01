@@ -12,10 +12,10 @@ public class UD7HashTableApp {
         int edades[]= {25,13 ,39 , 46};
         String alumnos[]= {"Pepe", "Juan", "Rogelio","Manolo"};
 
-        // Agregar elementos al HashMap
-        edadesAlumnos.put("Juan", 25);
-        edadesAlumnos.put("Pedro", 28);
-        edadesAlumnos.put("María", 30);
+        // Agregar elementos al HashMap KEY => VALUE
+        edadesAlumnos.put("Juan", 25); // {"Juan"=> 25}
+        edadesAlumnos.put("Pedro", 28);// {"Pedro"=> 28,"Juan"=> 25}
+        edadesAlumnos.put("María", 30);// {"María"=> 30,"Pedro"=> 28,"Juan"=> 25}
         
         //edadesAlumnos {
         // 		"María"=> 30,
@@ -47,16 +47,18 @@ public class UD7HashTableApp {
         boolean contienePedro = edadesAlumnos.containsKey("Pedro");
         System.out.println("¿El edadesAlumnos contiene a Pedro? " + contienePedro);
 
-        int tamaño = edadesAlumnos.size();
-        System.out.println("Tamaño del edadesAlumnos: " + tamaño);
+        int tamany = edadesAlumnos.size();
+        System.out.println("Tamaño del edadesAlumnos: " + tamany);
         // Eliminar un elemento del HashMap
+        System.out.println("Eliminamos la clave 'María'");
+
         edadesAlumnos.remove("María");
 
         // Obtener el tamaño del HashMap
-        tamaño = edadesAlumnos.size();
-        System.out.println("Tamaño del edadesAlumnos: " + tamaño);
+        tamany = edadesAlumnos.size();
+        System.out.println("Tamaño del edadesAlumnos: " + tamany);
         
-        
+        System.out.println("Edad de Pedro antes del PUT que actualiza: " + edadDePedro);
         //Actualizar valor "SETEAR" 
 
         edadesAlumnos.put("Pedro", 29);
