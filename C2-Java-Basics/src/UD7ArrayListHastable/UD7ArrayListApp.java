@@ -9,9 +9,9 @@ public class UD7ArrayListApp {
 	public static void main(String[] args) {
 		
 		//Declaración de variables
-		ArrayList<String> lista = new ArrayList<>(); //{}
+		ArrayList<String> lista = new ArrayList<>(); // {}
 		ArrayList<Integer> listaNumeros = new ArrayList<>();//{}
-		ArrayList<String> frutas = new ArrayList<>();
+		ArrayList<String> frutas = new ArrayList<>();//{}
 		
 		//Acciones del programa para lista
 		
@@ -48,6 +48,7 @@ public class UD7ArrayListApp {
 		
 		System.out.println("______\nObtener valor get(índice):");
 		System.out.println(listaNumeros.get(0)); //Indícame el valor del ÍNDICE 0
+		//listaNumeros[0] esta forma seria con array normales
 		
 		System.out.println("______\nIterador/Repeticiones en bucle iterator():");
 		Iterator<Integer> it = listaNumeros.iterator();
@@ -63,10 +64,12 @@ public class UD7ArrayListApp {
 		
 		System.out.println("______\nValor en un índice concreto de lista de Strings indexOf('Elemento 4'):");
 		System.out.println(lista.indexOf("Elemento 4")); //Parámentro es un VALOR
-		
-		
+
+		System.out.println("______\nEl size() de los elementos listaNumeros");
+		System.out.println(listaNumeros.size());
 		System.out.println("______\nElimina todos los elementos clear()");
-		listaNumeros.clear();
+		listaNumeros.clear(); 
+		System.out.println(listaNumeros.size());
 		
 		
 		//Acciones del programa para frutas
@@ -85,14 +88,16 @@ public class UD7ArrayListApp {
 		System.out.println("Eliminada Peras de la lista de frutas");
 		System.out.println(frutas.toString());
 		
-		indexFruta= frutas.indexOf("Limones"); //2
+		indexFruta= frutas.indexOf("Limones"); //1
 
 		frutas.remove(indexFruta);
 		System.out.println("Eliminada Limones de la lista de frutas");
 		System.out.println(frutas.toString());
-		
-
-		
+		frutas.add("Platanos");
+		System.out.println(frutas.toString());
+		indexFruta= frutas.indexOf("Naranjas");
+		frutas.remove(indexFruta);
+		System.out.println(frutas.toString());
 	}
 
 }
