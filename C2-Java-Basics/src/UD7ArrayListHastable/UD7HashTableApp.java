@@ -14,7 +14,7 @@ public class UD7HashTableApp {
 
         // Agregar elementos al HashMap KEY => VALUE
         edadesAlumnos.put("Juan", 25); // {"Juan"=> 25}
-        edadesAlumnos.put("Pedro", 28);// {"Pedro"=> 28,"Juan"=> 25}
+        edadesAlumnos.put("Pedro Juan", 28);// {"Pedro"=> 28,"Juan"=> 25}
         edadesAlumnos.put("María", 30);// {"María"=> 30,"Pedro"=> 28,"Juan"=> 25}
         
         //edadesAlumnos {
@@ -26,7 +26,7 @@ public class UD7HashTableApp {
         // Obtener el valor asociado a una clave
         int edadDeJuan = edadesAlumnos.get("Juan"); //25
         int edadDeMaria = edadesAlumnos.get("María"); //30
-        int edadDePedro = edadesAlumnos.get("Pedro"); //28
+        int edadDePedro = edadesAlumnos.get("Pedro Juan"); //28
         System.out.println("Edad de Juan: " + edadDeJuan);
         System.out.println("Edad de María: " + edadDeMaria);
         System.out.println("Edad de Pedro: " + edadDePedro);
@@ -44,7 +44,7 @@ public class UD7HashTableApp {
         }
 
         // Comprobar si una clave está en el HashMap
-        boolean contienePedro = edadesAlumnos.containsKey("Pedro");
+        boolean contienePedro = edadesAlumnos.containsKey("Pedro Juan");
         System.out.println("¿El edadesAlumnos contiene a Pedro? " + contienePedro);
 
         int tamany = edadesAlumnos.size();
@@ -58,12 +58,15 @@ public class UD7HashTableApp {
         tamany = edadesAlumnos.size();
         System.out.println("Tamaño del edadesAlumnos: " + tamany);
         
-        System.out.println("Edad de Pedro antes del PUT que actualiza: " + edadDePedro);
+        System.out.println("Edad de Pedro antes del PUT que actualiza: " 
+        + edadDePedro);
         //Actualizar valor "SETEAR" 
 
-        edadesAlumnos.put("Pedro", 29);
-        edadDePedro = edadesAlumnos.get("Pedro"); //Ahora 29
-        System.out.println("Edad de Pedro: " + edadDePedro);
+        edadesAlumnos.put("Pedro Juan", 29);
+        edadDePedro = edadesAlumnos.get("Pedro Juan"); //Ahora 29
+        System.out.println("Edad de Pedro Juan: " + edadDePedro);
+        tamany = edadesAlumnos.size();
+        System.out.println("Tamaño del edadesAlumnos: " + tamany);
         
 //		  Ejercicio HASHMAP / HASTABLE
 //        A través de un método que realice los put() para asinar key=>value
