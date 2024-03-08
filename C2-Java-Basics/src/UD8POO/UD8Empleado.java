@@ -16,12 +16,13 @@ public class UD8Empleado {
 		this.salario = 0.0;
 	}
 
-	public UD8Empleado(String nombre, String apellido, int edad, double salario) {
+	public UD8Empleado(String name, String surname, int age, double account) {
 		super();
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.edad = edad;
-		this.salario = salario;
+		this.nombre = name; 
+		//Al atributo de la CLASS Empleado le asignamos el primer parámetro
+		this.apellido = surname;
+		this.edad = age;
+		this.salario = account;
 	}
 	
 	//Métodos
