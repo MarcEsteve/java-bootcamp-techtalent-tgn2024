@@ -45,7 +45,29 @@ public class Frutas {
 	}
 
 	//Métodos
-	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
 	
 	public static void main(String[] args) {
 
@@ -80,6 +102,8 @@ public class Frutas {
 				+ " y tiene un precio de "	+ manzana.precio + "€"	);
 		
 	}
+
+	
 
 	
 
