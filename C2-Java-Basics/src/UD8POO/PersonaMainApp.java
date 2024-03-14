@@ -13,7 +13,12 @@ public class PersonaMainApp {
 		persona1.setCiudad("Valencia");
 		System.out.println(persona1.getCiudad()); // Imprime "Valencia"
 
-		System.out.println(persona1.toString()); // Imprime "Persona{nombre='Ana', edad=25, ciudad='Valencia'}"
+		System.out.println(persona1.toString()); 
+		// Imprime "Persona{nombre='Ana', edad=25, ciudad='Valencia'}"
+		System.out.println(persona2.toString()); 
+		// Imprime "Persona{nombre='Ana', edad=25, ciudad='Valencia'}"
+		persona2.setEdad(31);
+		System.out.println(persona2.toString()); 
 
 
 	}
