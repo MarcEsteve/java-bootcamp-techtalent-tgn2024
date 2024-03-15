@@ -20,7 +20,5 @@ public class PersonaMainApp {
 		persona2.setEdad(31);
 		System.out.println(persona2.toString()); 
 
-
 	}
-
 }
