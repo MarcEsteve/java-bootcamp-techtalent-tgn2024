@@ -1,6 +1,6 @@
 package UD8POO;
 
-public class Empleado {
+public class UD8Empleado {
 	//Atributos
 	private String nombre;
 	private String apellido;
@@ -9,14 +9,14 @@ public class Empleado {
 	
 	//Constructores
 	
-	public Empleado() {
+	public UD8Empleado() {
 		this.nombre = "";
 		this.apellido = "";
 		this.edad = 0;
 		this.salario = 0.0;
 	}
 
-	public Empleado(String name, String surname, int age, double account) {
+	public UD8Empleado(String name, String surname, int age, double account) {
 		super();
 		this.nombre = name; 
 		//Al atributo de la CLASS Empleado le asignamos el primer parámetro
@@ -34,7 +34,7 @@ public class Empleado {
 		} 
 		return aumento;
 	}
-	public boolean equals(Empleado a) {
+	public boolean equals(UD8Empleado a) {
 		if (a.getNombre().equals(nombre) && a.getApellido().equals(apellido)) {
 			return true;
 		} else {
