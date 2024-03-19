@@ -6,6 +6,7 @@ public class UD9Empleado {
 		protected String apellido;
 		protected int edad;
 		protected double salario;
+		private String dni;
 		
 		//Constructores
 		
@@ -14,6 +15,7 @@ public class UD9Empleado {
 			this.apellido = "";
 			this.edad = 0;
 			this.salario = 0.0;
+			this.dni = "123456";
 		}
 
 		public UD9Empleado(String name, String surname, int age, double account) {
@@ -51,4 +53,35 @@ public class UD9Empleado {
 		}
 		
 		
+		public String getDni() {
+			return dni;
+		}
+
+		public void setDni(String dni) {
+			this.dni = dni;
+		}
+		
+		public boolean comprueba() {
+			return compruebaNombre();
+		}
+
+		//Métodos
+		public boolean plus (double sueldoPlus) {
+			boolean aumento=false;
+			if (edad>40) {
+				salario+=sueldoPlus;
+				aumento=true;
+			} 
+			return aumento;
+		}
+		
+		//Métodos privados
+		
+		private boolean compruebaNombre() {
+			if(nombre.equals("")) {
+				return false;
+			}
+			return true;
+			
+		}
 }
