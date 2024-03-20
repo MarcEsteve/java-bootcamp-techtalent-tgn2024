@@ -19,4 +19,13 @@ public class UD9Repartidor extends UD9Empleado {
 			super(name, surname, age, account);
 			this.zona = alcance;
 		}
+
+		public boolean plus(double sueldoPlus) {
+			boolean aumento=false;
+			if (edad>40) {
+				salario+=sueldoPlus;
+				aumento=true;
+			} 
+			return aumento;
+		}
 }

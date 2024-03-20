@@ -1,12 +1,13 @@
 package UD9Herencia;
 
-public class UD9Empleado {
+public abstract class UD9Empleado implements UD9Empleable {
 		//Atributos
 		protected String nombre;
 		protected String apellido;
 		protected int edad;
 		protected double salario;
 		private String dni;
+		protected final static double SALARIO_DEF=600;
 		
 		//Constructores
 		
@@ -14,7 +15,7 @@ public class UD9Empleado {
 			this.nombre = "";
 			this.apellido = "";
 			this.edad = 0;
-			this.salario = 0.0;
+			this.salario = SALARIO_DEF;
 			this.dni = "123456";
 		}
 
@@ -66,14 +67,7 @@ public class UD9Empleado {
 		}
 
 		//Métodos
-		public boolean plus (double sueldoPlus) {
-			boolean aumento=false;
-			if (edad>40) {
-				salario+=sueldoPlus;
-				aumento=true;
-			} 
-			return aumento;
-		}
+		public abstract boolean plus (double sueldoPlus);
 		
 		//Métodos privados
 		
@@ -83,5 +77,10 @@ public class UD9Empleado {
 			}
 			return true;
 			
+		}
+
+		
+		public double calcBruto(double pagaExtra) {
+			return 0;
 		}
 }
