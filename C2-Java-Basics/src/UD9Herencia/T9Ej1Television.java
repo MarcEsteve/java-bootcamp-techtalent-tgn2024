@@ -15,7 +15,7 @@ public class T9Ej1Television extends T9Ej1Electrodomesticos {
     public T9Ej1Television() {
     	this.precioBase=PRECIO_BASE_DEFAULT;
     	this.peso=PESO_DEFAULT;
-    	this.color="blanco";
+    	this.color=COLOR_DEFAULT;
     	this.consumoEnergetico=CONSUMO_ENERGETICO_DEFAULT;
     	this.resolucion=RESOLUCION_DEFAULT;
     	this.sintonizadorTDT = SINTONIZADOR_TDT_DEFAULT;
@@ -25,7 +25,7 @@ public class T9Ej1Television extends T9Ej1Electrodomesticos {
 
     	this.precioBase=precioBase;
     	this.peso=peso;
-    	this.color="blanco";
+    	this.color=COLOR_DEFAULT;
     	this.consumoEnergetico=CONSUMO_ENERGETICO_DEFAULT;
     	this.resolucion=RESOLUCION_DEFAULT;
     	this.sintonizadorTDT = SINTONIZADOR_TDT_DEFAULT;

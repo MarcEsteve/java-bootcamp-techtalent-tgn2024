@@ -22,17 +22,23 @@ public class T9Ej2Main {
         videojuegos[4] = new T9Ej2Videojuego("Minecraft", 20, "Sandbox", "Mojang Studios");
 
         // Entregar algunos Videojuegos y Series
-        series[0].entregar();
+        series[0].entregar(); //Seran true
         series[2].entregar();
         videojuegos[1].entregar();
+        videojuegos[3].entregar();
         videojuegos[4].entregar();
         
      // Contar cuántos Series y Videojuegos están entregados y devolverlos
         int seriesEntregadas = contarEntregados(series);
 //        T9Ej2Serie[] seriesDevueltas = devolverEntregados(series);
+        
+        System.out.println("Series entregadas: " + seriesEntregadas);
 
         int videojuegosEntregados = contarEntregados(videojuegos);
 //        T9Ej2Videojuego[] videojuegosDevueltos = devolverEntregados(videojuegos);
+        
+        System.out.println("Videojuegos entregadas: " + videojuegosEntregados);
+
 
         // Indicar el Videojuego con más horas estimadas
         T9Ej2Videojuego videojuegoMasHoras = obtenerVideojuegoMasHoras(videojuegos);

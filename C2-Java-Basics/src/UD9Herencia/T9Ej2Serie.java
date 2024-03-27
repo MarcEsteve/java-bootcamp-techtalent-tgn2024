@@ -100,4 +100,22 @@ public class T9Ej2Serie implements T9Ej2Entregable {
 		T9Ej2Serie otherSerie = (T9Ej2Serie) o;
         return Integer.compare(this.numeroTemporadas, otherSerie.getNumeroTemporadas());
     }
+	
+	//Gracias Aurora
+//	@Override
+//	public boolean compareTo(Object a) 
+//    {
+//        if(a instanceof SerieUD9) {
+//            SerieUD9 otra_Serie= (SerieUD9) a; 
+//            return this.getnTemporadas() > otra_Serie.getnTemporadas();
+//        }else {
+//            if(a instanceof Videojuego) {
+//                Videojuego otroJuego= (Videojuego)a; 
+//                return false ; 
+//            }else {
+//                throw new IllegalArgumentException("No se puede comparar con un objeto de tipo desconocido");
+//            }
+//        }
+//        
+//    }
 }
