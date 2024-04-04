@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class T9Ej5Estudiante extends T9Ej5Persona {
    
-    private int calificacion;
+    private double calificacion;
 
     // Constructor
     public T9Ej5Estudiante(String nombre, int edad, String sexo, int calificacion) {
@@ -21,7 +21,7 @@ public class T9Ej5Estudiante extends T9Ej5Persona {
     }
 
     // Métodos getter
-    public int getCalificacion() {
+    public double getCalificacion() {
         return calificacion;
     }
 
