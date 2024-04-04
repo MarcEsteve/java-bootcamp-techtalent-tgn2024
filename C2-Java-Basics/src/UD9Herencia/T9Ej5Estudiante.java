@@ -2,10 +2,8 @@ package UD9Herencia;
 
 import java.util.Random;
 
-public class T9Ej5Estudiante {
-    private String nombre;
-    private int edad;
-    private String sexo;
+public class T9Ej5Estudiante extends T9Ej5Persona {
+   
     private int calificacion;
 
     // Constructor
