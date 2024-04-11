@@ -8,4 +8,7 @@ CREATE TABLE usuarios
 	PRIMARY KEY (id));
 CREATE TABLE ciudad1 (nombre CHAR(20)NOT NULL, poblacion INT NULL);
 
-SHOW COLUMNS 
+SHOW COLUMNS FROM gente;
+
+DROP DATABASE [IF EXISTS] gente;
+
