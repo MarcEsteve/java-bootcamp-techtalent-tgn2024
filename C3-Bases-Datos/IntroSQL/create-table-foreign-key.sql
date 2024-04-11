@@ -1,0 +1,7 @@
+CREATE TABLE personas (id INT AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(40),
+fecha DATE);
+
+CREATE TABLE telefonos (numero CHAR(12), 
+id_personas INT NOT NULL REFERENCES personas (id)
+ON DELETE CASCADE ON UPDATE CASCADE);
