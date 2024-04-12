@@ -14,12 +14,12 @@ CREATE TABLE tema (
     PRIMARY KEY (clavetema));
 
 CREATE TABLE autor (
-    claveautor SMALLINT NOT NULL,
+    claveautor INT NOT NULL,
     nombre VARCHAR(60),
     PRIMARY KEY (claveautor));
 
 CREATE TABLE socio (
-    clavesocio SMALLINT NOT NULL,
+    clavesocio INT NOT NULL,
     nombre VARCHAR(60),
     direccion VARCHAR(60),
     telefono VARCHAR(15),
@@ -40,32 +40,55 @@ CREATE TABLE libro (
     ON UPDATE CASCADE);
 
 CREATE TABLE ejemplar (
-        claveejemplar INT NOT NULL, 
+        clavejemplar INT NOT NULL, 
         clavelibro INT NOT NULL,
         numerorden SMALLINT NOT NULL,
         edicion SMALLINT, 
         ubicacion VARCHAR(15),
         categoria CHAR, 
-    PRIMARY KEY (claveejemplar), 
+    PRIMARY KEY (clavejemplar), 
     KEY (clavelibro),
     FOREIGN KEY (clavelibro) 
     REFERENCES libro (clavelibro) 
     ON DELETE CASCADE
     ON UPDATE CASCADE);
 
-CREATE TABLE prestamo ( 
-        clavesocio INT,
-        claveejemplar INT,
-        numerorden SMALLINT,
-        fechaprestamo DATE NOT NULL,
-        fechadevolucion DATE DEFAULT NULL,
-        notas BLOB,
-        edicion SMALLINT, 
-        ubicacion VARCHAR(15),
-        categoria CHAR, 
-    PRIMARY KEY (claveprestamo), 
-    KEY (clavelibro),
-    FOREIGN KEY (clavelibro) 
-    REFERENCES libro (clavelibro) 
-    ON DELETE CASCADE
-    ON UPDATE CASCADE);
+CREATE TABLE escritopor (
+      clavelibro INT NOT NULL,
+      claveautor INT NOT NULL,
+      FOREIGN KEY (clavelibro)
+      REFERENCES libro (clavelibro)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE,
+      FOREIGN KEY (claveautor)
+      REFERENCES autor (claveautor)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE);
+
+CREATE TABLE tratasobre (
+      clavelibro INT,
+      clavetema SMALLINT NOT NULL,
+      FOREIGN KEY (clavelibro)
+      REFERENCES libro (clavelibro)
+      ON DELETE SET NULL
+      ON UPDATE CASCADE,
+      FOREIGN KEY (clavetema)
+      REFERENCES tema (clavetema)
+      ON DELETE CASCADE
+      ON UPDATE CASCADE);
+
+CREATE TABLE prestamo (
+      clavesocio INT,
+      clavejemplar INT,
+      numerorden SMALLINT,
+      fechaprestamo DATE NOT NULL,
+      fechadevolucion DATE DEFAULT NULL,
+      notas BLOB,
+      FOREIGN KEY (clavesocio) 
+      REFERENCES socio (clavesocio) 
+      ON DELETE SET NULL 
+      ON UPDATE CASCADE,
+      FOREIGN KEY (clavejemplar) 
+      REFERENCES ejemplar (clavejemplar) 
+      ON DELETE SET NULL 
+      ON UPDATE CASCADE);
