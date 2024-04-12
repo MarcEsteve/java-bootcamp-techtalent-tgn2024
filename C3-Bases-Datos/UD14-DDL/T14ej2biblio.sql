@@ -38,3 +38,34 @@ CREATE TABLE libro (
     REFERENCES editorial (claveditorial) 
     ON DELETE SET NULL
     ON UPDATE CASCADE);
+
+CREATE TABLE ejemplar (
+        claveejemplar INT NOT NULL, 
+        clavelibro INT NOT NULL,
+        numerorden SMALLINT NOT NULL,
+        edicion SMALLINT, 
+        ubicacion VARCHAR(15),
+        categoria CHAR, 
+    PRIMARY KEY (claveejemplar), 
+    KEY (clavelibro),
+    FOREIGN KEY (clavelibro) 
+    REFERENCES libro (clavelibro) 
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
+
+CREATE TABLE prestamo ( 
+        clavesocio INT,
+        claveejemplar INT,
+        numerorden SMALLINT,
+        fechaprestamo DATE NOT NULL,
+        fechadevolucion DATE DEFAULT NULL,
+        notas BLOB,
+        edicion SMALLINT, 
+        ubicacion VARCHAR(15),
+        categoria CHAR, 
+    PRIMARY KEY (claveprestamo), 
+    KEY (clavelibro),
+    FOREIGN KEY (clavelibro) 
+    REFERENCES libro (clavelibro) 
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
