@@ -84,11 +84,13 @@ CREATE TABLE prestamo (
       fechaprestamo DATE NOT NULL,
       fechadevolucion DATE DEFAULT NULL,
       notas BLOB,
+      KEY (clavesocio),
       FOREIGN KEY (clavesocio) 
-      REFERENCES socio (clavesocio) 
-      ON DELETE SET NULL 
+      REFERENCES socio (clavesocio)
+      ON DELETE CASCADE
       ON UPDATE CASCADE,
+      KEY (clavejemplar),
       FOREIGN KEY (clavejemplar) 
-      REFERENCES ejemplar (clavejemplar) 
-      ON DELETE SET NULL 
+      REFERENCES ejemplar (clavejemplar)
+      ON DELETE CASCADE
       ON UPDATE CASCADE);
