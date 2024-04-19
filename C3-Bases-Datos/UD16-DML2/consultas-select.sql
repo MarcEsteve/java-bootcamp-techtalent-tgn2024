@@ -26,6 +26,11 @@ SELECT * FROM Customers WHERE Country='Germany ' AND NOT City='Berlin';
 SELECT * FROM Customers WHERE CustomerID BETWEEN 30 AND 86;
 SELECT * FROM Customers WHERE CustomerID >= 30 AND CustomerID <=86;
 
-SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;
+SELECT * FROM Products WHERE Price AS PRECIO BETWEEN 10 AND 20;
 
 SELECT * FROM Products WHERE (Price BETWEEN 10 AND 20) AND NOT CategoryID IN (1,2,3) ;
+
+
+-- Alias AS
+SELECT Price, Price*0.21  AS IVA, Price+Price*0.21 AS TOTAL FROM Products;
+SELECT `idestacion`,velmin*1.8 AS MILLAS_HORA FROM `muestra` ORDER BY `muestra`.`tempmin` ASC;
