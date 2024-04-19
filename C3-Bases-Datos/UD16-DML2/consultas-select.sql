@@ -21,3 +21,11 @@ SELECT DNI FROM directores WHERE despacho BETWEEN 1 AND 5 ;
 SELECT * FROM Customers WHERE Country='Germany' AND City='Berlin';
 SELECT * FROM Customers WHERE Country='Mexico' OR City='Berlin';
 SELECT * FROM Customers WHERE Country='Germany ' AND NOT City='Berlin';
+
+-- Equialentes para BETWEEN
+SELECT * FROM Customers WHERE CustomerID BETWEEN 30 AND 86;
+SELECT * FROM Customers WHERE CustomerID >= 30 AND CustomerID <=86;
+
+SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;
+
+SELECT * FROM Products WHERE (Price BETWEEN 10 AND 20) AND NOT CategoryID IN (1,2,3) ;
