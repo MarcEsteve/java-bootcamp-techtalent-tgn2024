@@ -2,6 +2,7 @@ CREATE DATABASE directores_despachos;
 USE directores_despachos;
 CREATE TABLE despachos 
     (num INT,
+    --AUTO_INCREMENT
     capacidad INT NOT NULL,
     PRIMARY KEY (num));
 
@@ -16,7 +17,7 @@ CREATE TABLE directores
     ON DELETE CASCADE
     ON UPDATE CASCADE,
     FOREIGN KEY (despacho) 
-    REFERENCES despachoS(num)
+    REFERENCES despachos (num)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
 
