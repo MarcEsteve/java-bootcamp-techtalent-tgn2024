@@ -3,6 +3,7 @@ INSERT INTO despachos (capacidad) VALUES
 -- Dos ventajas del auto_increment
 -- 1. Eficiencia en la insercción deatos en la instrucción SQL
 -- 2. Elimina la probabilidad de los errores
+-- INSERT INTO despachos VALUES (NULL,3),(NULL,5),(NULL,8),(NULL,16),(NULL,4),(NULL,7),(NULL,9),(3),(NULL,11),(NULL,33);
 
 -- Inicial prueba
 INSERT INTO `directores` (`DNI`, `NomApels`, `DNIJefe`, `despacho`) VALUES ('12345', 'Marc Esteve Garcia', NULL, '3');
