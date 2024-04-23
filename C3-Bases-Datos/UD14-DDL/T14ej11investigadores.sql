@@ -2,7 +2,7 @@ CREATE DATABASE investigadores_db;
 USE investigadores_db;
 
 CREATE TABLE facultades(
-    cod INT,
+    cod INT AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL,
     PRIMARY KEY (cod));
 
@@ -36,3 +36,6 @@ CREATE TABLE reserva(
     FOREIGN KEY (numserie) REFERENCES equipos (numserie)
     ON DELETE CASCADE 
     ON UPDATE CASCADE);
+/* Añadimos un AUTO_INCREMENT
+ALTER TABLE `facultades` CHANGE `cod` `cod` INT(11) NOT NULL AUTO_INCREMENT;
+*/
