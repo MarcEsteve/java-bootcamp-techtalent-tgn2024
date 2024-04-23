@@ -29,7 +29,19 @@ INSERT INTO articulos (nombre, precio, fabricante) VALUES
 SELECT nombre FROM articulos;
 -- 1.2 nombres y precio de los productos de la tienda
 SELECT nombre, precio FROM articulos;
+-- 1.3 articulos con precio menor o igual a 200
 SELECT nombre FROM articulos WHERE precio <= 200;
--- AS para el alias y ROUND  para redondear
+-- 1.4 AS para el alias y ROUND  para redondear entre 60 y 120
 SELECT * FROM articulos WHERE precio BETWEEN 60 AND 120;
+SELECT * FROM articulos WHERE precio >= 60 AND precio <=120;
+-- 1.5 Precios en pesetas
 SELECT nombre, precio, ROUND(precio * 166.386) AS `Precio Pesetas` FROM articulos;
+-- 1.6 Precio medio de articulos
+SELECT AVG(precio) AS `Precio Medio` FROM articulos;
+-- 1.7
+SELECT AVG(precio) AS `Precio Medio` FROM articulos WHERE fabricante = 2;
+-- 1.8
+SELECT COUNT(articulos) AS `Número de articulos` FROM articulos WHERE precio >= 180;
+-- 1.9
+SELECT Nombre, precio FROM articulos WHERE precio >= 180 ORDER BY precio DESC, Nombre ASC;
+-- 1.10
