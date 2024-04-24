@@ -38,10 +38,28 @@ SELECT * FROM articulos WHERE precio >= 60 AND precio <=120;
 SELECT nombre, precio, ROUND(precio * 166.386) AS `Precio Pesetas` FROM articulos;
 -- 1.6 Precio medio de articulos
 SELECT AVG(precio) AS `Precio Medio` FROM articulos;
--- 1.7
+-- 1.7 Actualizamos para que se repita el fabricante
+-- UPDATE `articulos` SET `fabricante` = '2' WHERE `articulos`.`codart` = 5;
 SELECT AVG(precio) AS `Precio Medio` FROM articulos WHERE fabricante = 2;
--- 1.8
-SELECT COUNT(articulos) AS `Número de articulos` FROM articulos WHERE precio >= 180;
+-- 1.8 Contamos registros, se suele utilizar el * para todos los campos o la clave primaria
+SELECT COUNT(codart) AS `Número de articulos` FROM articulos WHERE precio >= 180;
+SELECT COUNT(*) AS `Número de articulos` FROM articulos WHERE precio >= 180;
+
+-- Insertar 10 tuplas adicionales en la tabla 'articulos' con nombres realistas y precios más elevados
+INSERT INTO articulos (nombre, precio, fabricante) VALUES
+('Smartphone Galaxy S22', 999.99, 1),
+('Portátil Dell XPS 15', 1899.99, 2),
+('Televisor OLED LG 65"', 2499.99, 3),
+('Cámara DSLR Canon EOS R6', 2999.99, 4),
+('Refrigeradora Samsung Side-by-Side', 1799.99, 5),
+('Lavadora Bosch Serie 8', 1299.99, 6),
+('Aspiradora Dyson V15 Detect', 699.99, 7),
+('Bicicleta eléctrica Trek Powerfly', 3499.99, 8),
+('Consola de juegos PS6', 599.99, 9),
+('Monitor ultrawide LG 34"', 799.99, 10);
+
 -- 1.9
-SELECT Nombre, precio FROM articulos WHERE precio >= 180 ORDER BY precio DESC, Nombre ASC;
+SELECT nombre, precio FROM articulos WHERE precio >= 180 ORDER BY precio DESC, nombre ASC;
 -- 1.10
+SELECT articulos.nombre AS "Artículo", fabricantes.nombre AS "Fabricante", precio AS "Precio de artículos por cada fabricante" FROM articulos, fabricantes WHERE articulos.fabricante = fabricantes.codigo;
+SELECT articulos.nombre AS "Artículo", fabricantes.nombre AS "Fabricante", precio AS "Precio de artículos por cada fabricante" FROM articulos INNER JOIN fabricantes ON articulos.fabricante = fabricantes.codigo ORDER BY fabricantes.nombre;
