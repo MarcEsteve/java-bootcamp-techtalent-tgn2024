@@ -3,6 +3,8 @@ START TRANSACTION;
 CREATE DATABASE gestion_pedidos;
 USE gestion_pedidos;
 
+-- Tabla `clientes`
+
 CREATE TABLE `clientes` (
   `CÓDIGOCLIENTE` varchar(30) DEFAULT NULL,
   `EMPRESA` varchar(30) DEFAULT NULL,
@@ -12,8 +14,7 @@ CREATE TABLE `clientes` (
   `RESPONSABLE` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`CÓDIGOCLIENTE`));
 
--- Volcado de datos para la tabla `clientes`
---
+-- Datos para la tabla `clientes`
 
 INSERT INTO `clientes` (`CÓDIGOCLIENTE`, `EMPRESA`, `DIRECCIÓN`, `POBLACIÓN`, `TELÉFONO`, `RESPONSABLE`) VALUES
 ('CT01', 'BELTRÁN E HIJOS', 'LAS FUENTES 78', 'MADRID', '914456435', 'ANGEL MARTÍNEZ'),
