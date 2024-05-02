@@ -81,3 +81,84 @@ ON e.departamento = d.codigo;
 SELECT empleados.nombre FROM empleados LEFT JOIN departamentos 
 ON e.departamento = d.codigo
 WHERE empleados.departamento IS NULL;
+
+/*
+2.12.Obtener los nombres y apellidos de los empleados que trabajen en departamentos cuyo presupuesto sea mayor de 60.000 €.
+En mis datos de mi DB no habia ninguno, modifico a >=12000
+*/
+
+SELECT e.nombre, e.apellidos 
+FROM empleados e INNER JOIN departamentos d 
+ON e.departamento = d.codigo
+WHERE d.presupuesto >= 12000;
+
+--2.13.
+SELECT * FROM departamentos
+WHERE presupuesto > (SELECT AVG(presupuesto) FROM departamentos);
+
+-- 2.14 Obtener los nombres (únicamente los nombres) de los departamentos que tienen más de dos empleados.
+SELECT d.nombre
+FROM departamentos d
+WHERE  2 < 
+(
+    SELECT COUNT(em.dni)
+    FROM empleados em
+    WHERE em.departamento = d.codigo
+    GROUP BY em.departamento
+)
+GROUP BY d.nombre
+
+SELECT d.nombre
+FROM empleados e, departamentos d
+WHERE e.departamento = d.codigo 
+GROUP BY e.departamento
+HAVING COUNT(e.dni) > 2;
+
+SELECT d.nombre AS "Departamentos con más de 2 empleados"
+FROM empleados e INNER JOIN departamentos d
+ON e.departamento = d.codigo 
+-- Equipara FK departamento con PK codigo
+GROUP BY e.departamento
+HAVING COUNT(e.dni) > 2;
+
+--2.15
+INSERT INTO departamentos (codigo, nombre, presupuesto) 
+VALUES (11, 'Calidad', 40000);
+
+-- Ejemplo para AUTO_INCREMENT
+DELETE FROM departamentos WHERE `departamentos`.`codigo` = 16;
+INSERT INTO departamentos (nombre, presupuesto) 
+VALUES ('Otros', 150000);
+UPDATE `departamentos` SET `codigo` = '16' WHERE `departamentos`.`codigo` = 17;
+
+INSERT INTO empleados (dni, nombre, apellidos, departamento) VALUES ('89267109', 'Esther', 'Vázquez', 11);
+
+-- 2.16
+UPDATE departamentos
+SET presupuesto = presupuesto * 0.9;
+
+-- 2.17. Reasignar a los empleados del departamento de investigaci´on (código 77) al departamento de informática (código 14).
+
+-- Antes actualizo para que exista el 77 
+-- UPDATE `departamentos` SET `codigo` = '77' WHERE `departamentos`.`codigo` = 18;
+
+UPDATE empleados
+SET departamento = 14
+WHERE departamento = 77;
+
+
+--2.18--
+DELETE FROM empleados
+WHERE codigo = 14;
+
+--2.19
+-- Conociendo las tablas puedes sacar esta conclusión particular
+DELETE FROM empleados WHERE departamento = 5;
+-- Genérica para cualquier BD
+DELETE FROM empleados
+WHERE departamento IN
+    (SELECT codigo FROM departamentos
+    WHERE presupuesto >= 60000);
+
+-- 2.20 Despedir a todos los empleados
+DELETE FROM empleados;
