@@ -1,0 +1,27 @@
+[
+    {
+      "_id": 1,
+      "nombre": "La Trattoria",
+      "tipo_cocina": "Italiana",
+      "ubicacion": {"latitud": 41.9028, "longitud": 12.4964},
+      "horas_apertura": {"lunes_a_viernes": "11:00 - 22:00", "sabado": "12:00 - 23:00", "domingo": "cerrado"},
+      "calificaciones": [4.5, 4.3, 4.6]
+    },
+    {
+      "_id": 2,
+      "nombre": "Sushi Express",
+      "tipo_cocina": "Japonesa",
+      "ubicacion": {"latitud": 35.6895, "longitud": 139.6917},
+      "horas_apertura": {"lunes_a_viernes": "12:00 - 21:00", "sabado": "13:00 - 22:00", "domingo": "cerrado"},
+      "calificaciones": [4.2, 4.1, 4.4]
+    },
+    {
+      "_id": 3,
+      "nombre": "Chez Pierre",
+      "tipo_cocina": "Francesa",
+      "ubicacion": {"latitud": 48.8566, "longitud": 2.3522},
+      "horas_apertura": {"lunes_a_viernes": "18:00 - 23:00", "sabado": "17:00 - 00:00", "domingo": "cerrado"},
+      "calificaciones": [4.8, 4.7, 4.9]
+    }
+  ]
+  

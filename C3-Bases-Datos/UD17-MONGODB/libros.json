@@ -1,0 +1,27 @@
+[
+    {
+      "_id": 1,
+      "titulo": "Harry Potter and the Philosopher's Stone",
+      "autor": "J.K. Rowling",
+      "genero": "Fantasía",
+      "idioma": "Inglés",
+      "año_publicacion": 1997
+    },
+    {
+      "_id": 2,
+      "titulo": "The Hitchhiker's Guide to the Galaxy",
+      "autor": "Douglas Adams",
+      "genero": "Ciencia Ficción",
+      "idioma": "Inglés",
+      "año_publicacion": 1979
+    },
+    {
+      "_id": 3,
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "genero": "Distopía",
+      "idioma": "Inglés",
+      "año_publicacion": 1949
+    }
+  ]
+  

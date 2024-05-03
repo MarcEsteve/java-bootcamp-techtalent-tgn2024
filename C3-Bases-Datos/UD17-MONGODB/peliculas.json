@@ -1,0 +1,27 @@
+[
+    {
+      "_id": 1,
+      "titulo": "Pulp Fiction",
+      "año": 1994,
+      "director": "Quentin Tarantino",
+      "genero": ["Crimen", "Drama"],
+      "actores_principales": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"]
+    },
+    {
+      "_id": 2,
+      "titulo": "The Matrix",
+      "año": 1999,
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "genero": ["Ciencia Ficción", "Acción"],
+      "actores_principales": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+    },
+    {
+      "_id": 3,
+      "titulo": "Inception",
+      "año": 2010,
+      "director": "Christopher Nolan",
+      "genero": ["Ciencia Ficción", "Aventura"],
+      "actores_principales": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"]
+    }
+  ]
+  

@@ -1,0 +1,27 @@
+[
+    {
+      "_id": 1,
+      "nombre": "Lionel Messi",
+      "fecha_nacimiento": "1987-06-24",
+      "equipo_actual": "Paris Saint-Germain",
+      "posicion": "Delantero",
+      "nacionalidad": "Argentina"
+    },
+    {
+      "_id": 2,
+      "nombre": "Cristiano Ronaldo",
+      "fecha_nacimiento": "1985-02-05",
+      "equipo_actual": "Manchester United",
+      "posicion": "Delantero",
+      "nacionalidad": "Portugal"
+    },
+    {
+      "_id": 3,
+      "nombre": "Neymar Jr.",
+      "fecha_nacimiento": "1992-02-05",
+      "equipo_actual": "Paris Saint-Germain",
+      "posicion": "Delantero",
+      "nacionalidad": "Brasil"
+    }
+  ]
+  
