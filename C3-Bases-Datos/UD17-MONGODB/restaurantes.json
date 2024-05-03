@@ -3,8 +3,14 @@
       "_id": 1,
       "nombre": "La Trattoria",
       "tipo_cocina": "Italiana",
-      "ubicacion": {"latitud": 41.9028, "longitud": 12.4964},
-      "horas_apertura": {"lunes_a_viernes": "11:00 - 22:00", "sabado": "12:00 - 23:00", "domingo": "cerrado"},
+      "ubicacion": {
+                "latitud": 41.9028,     
+                "longitud": 12.4964
+                    },
+      "horas_apertura": {
+            "lunes_a_viernes": "11:00 - 22:00", 
+            "sabado": "12:00 - 23:00", 
+            "domingo": "cerrado"},
       "calificaciones": [4.5, 4.3, 4.6]
     },
     {
