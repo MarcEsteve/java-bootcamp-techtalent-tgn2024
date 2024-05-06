@@ -2,7 +2,7 @@
 use tiendainfo
 
 // Crear colección fabricantes e insertar documentos
-db.createCollection("fabricantes");
+db.createCollection("fabricantes")
 db.fabricantes.insertMany([
     { nombre: "Fabricante A" },
     { nombre: "Fabricante B" },
@@ -14,7 +14,7 @@ db.fabricantes.insertMany([
     { nombre: "Fabricante H" },
     { nombre: "Fabricante I" },
     { nombre: "Fabricante J" }
-]);
+])
 
 // Crear colección articulos e insertar documentos
 db.createCollection("articulos");
