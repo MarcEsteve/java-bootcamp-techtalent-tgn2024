@@ -108,5 +108,32 @@ public class AplicacionGrafica extends JFrame {
 		list.setBounds(371, 72, 86, 200);
 		contentPane.add(list);
 		
+		//MENUS y submenus
+		JMenuBar barraMenu = new JMenuBar();
+		JMenu archivo = new JMenu("Archivo");
+		JMenu editar = new JMenu("Editar");
+		barraMenu.add(archivo);
+		barraMenu.add(editar);
+		
+		JMenuItem abrir = new JMenuItem("Abrir");
+		JMenuItem guardar = new JMenuItem("Guardar");
+		JMenuItem cargar = new JMenuItem("Cargar");
+		JMenuItem salir = new JMenuItem("Salir");
+		
+		JMenuItem modificar = new JMenuItem("Modificar");
+		JMenuItem copiar = new JMenuItem("Copiar");
+		JMenuItem pegar = new JMenuItem("Pegar");
+		
+		archivo.add(abrir);
+		archivo.add(guardar);
+		archivo.add(cargar);
+		archivo.add(salir);
+		
+		editar.add(modificar);
+		editar.add(copiar);
+		editar.add(pegar);
+		
+		setJMenuBar(barraMenu);
+		
 	}
 }
