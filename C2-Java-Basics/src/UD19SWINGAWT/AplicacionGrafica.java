@@ -8,7 +8,7 @@ public class AplicacionGrafica extends JFrame {
 	
 	public AplicacionGrafica() {
 		setTitle("Titulo ventana FRAME");
-		setBounds(400,200,300,500);
+		setBounds(400,200,400,500);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
 		
@@ -17,7 +17,7 @@ public class AplicacionGrafica extends JFrame {
 		
 		// CREACIÓN DE COMPONENTES
 		//Componente Etiqueta
-		JLabel etiqueta= new JLabel("Hola MUNDO");
+		JLabel etiqueta= new JLabel("Nombre");
 		etiqueta.setBounds(43,20,100,20);
 		contentPane.add(etiqueta);
 		//Componente Campo de texto
@@ -25,8 +25,8 @@ public class AplicacionGrafica extends JFrame {
 		campo.setBounds(43,67,86,26);
 		contentPane.add(campo);
 		//Componente Botón
-		JButton boton = new JButton("Botón de enviar");
-		boton.setBounds(43,120,200,23);
+		JButton boton = new JButton("Enviar");
+		boton.setBounds(43,120,100,23);
 		contentPane.add(boton);
 		//Componente "Botón radio" se debe "agrupar" selección ÚNICA
 		JRadioButton rdbtnOpcion1 = new JRadioButton("Opción 1 radio", true);
@@ -85,6 +85,21 @@ public class AplicacionGrafica extends JFrame {
 		comboBox.addItem("Alberto");
 		comboBox.addItem("Arturo");
 		
+		//Componente "Interruptor"
+		JToggleButton toggle = new JToggleButton("Interruptor", true);
+		toggle.setBounds(189, 291, 121, 23);
+		contentPane.add(toggle);
+		
+		//Componente "Contador"
+		JSpinner spin = new JSpinner();
+		spin.setBounds(371, 20, 29, 20);
+		contentPane.add(spin);
+		
+		//Componente "Lista"
+		String pelis[] = {"Star Wars", "Matrix", "Inception"};
+		JList list = new JList<>(pelis);
+		list.setBounds(371, 72, 86, 80);
+		contentPane.add(list);
 		
 	}
 }
