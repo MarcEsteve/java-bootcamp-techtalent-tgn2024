@@ -18,13 +18,13 @@ public class trycatchsimple {
 
 		try {
 			// Intentar acceder a un índice fuera de rango en un arreglo
-			int[] arreglo = { 1, 2, 3 };
+			int[] arreglo = { 24, 33, 58 };
 			System.out.println(arreglo[3]); // Esto lanzará una ArrayIndexOutOfBoundsException
 		} catch (ArrayIndexOutOfBoundsException e) {
 			// Manejo de la excepción de índice fuera de rango
 			System.out.println("¡Ups! Índice fuera de rango: " + e.getMessage());
 		}
-
+//		int[] arreglo = { 24, 33, 58 };
 //		System.out.println(arreglo[3]);
 		
 		try {
