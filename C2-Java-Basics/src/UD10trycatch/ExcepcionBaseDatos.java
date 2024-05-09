@@ -16,5 +16,6 @@ public class ExcepcionBaseDatos {
             // Manejo de la excepción de conexión a la base de datos
             System.out.println("¡Ups! Error al conectar a la base de datos: " + e.getMessage());
         }
+        System.out.println("Finaliza el programa");
     }
 }
