@@ -13,7 +13,9 @@ public class GestorBD {
         try {
             conexion = DriverManager.getConnection(URL, USER, PASSWORD);
             statement = conexion.createStatement();
-            statement.executeUpdate("INSERT INTO " + tabla + " (" + columna + ") VALUES ('" + valor + "')");
+            String consulta = "INSERT INTO " + tabla + " (" + columna + ") "
+            		+ "VALUES ('" + valor + "')";
+            statement.executeUpdate(consulta);
             System.out.println("Registro insertado en la tabla '" + tabla + "'");
         } catch (SQLException e) {
             System.out.println("Error: " + e.getMessage());
@@ -33,7 +35,9 @@ public class GestorBD {
         try {
             conexion = DriverManager.getConnection(URL, USER, PASSWORD);
             statement = conexion.createStatement();
-            String query = "UPDATE " + tabla + " SET " + columnaActualizar + " = '" + nuevoValor + "' WHERE " + columnaCondicion + " = '" + valorCondicion + "'";
+            String query = "UPDATE " + tabla + " SET " + columnaActualizar 
+            		+ " = '" + nuevoValor + "' WHERE " + columnaCondicion 
+            		+ " = '" + valorCondicion + "'";
             statement.executeUpdate(query);
             System.out.println("Registro actualizado en la tabla '" + tabla + "'");
         } catch (SQLException e) {
@@ -54,7 +58,8 @@ public class GestorBD {
         try {
             conexion = DriverManager.getConnection(URL, USER, PASSWORD);
             statement = conexion.createStatement();
-            String query = "DELETE FROM " + tabla + " WHERE " + columnaCondicion + " = '" + valorCondicion + "'";
+            String query = "DELETE FROM " + tabla + " WHERE " 
+            		+ columnaCondicion + " = '" + valorCondicion + "'";
             statement.executeUpdate(query);
             System.out.println("Registro eliminado en la tabla '" + tabla + "'");
         } catch (SQLException e) {
@@ -78,7 +83,8 @@ public class GestorBD {
             ResultSet resultSet = statement.executeQuery("SELECT * FROM " + tabla);
             System.out.println("Registros en la tabla '" + tabla + "':");
             while (resultSet.next()) {
-                System.out.println("Código: " + resultSet.getInt("codigo") + ", Nombre: " + resultSet.getString("nombre"));
+                System.out.println("Código: " + resultSet.getInt("codigo") 
+                + ", Nombre: " + resultSet.getString("nombre"));
             }
         } catch (SQLException e) {
             System.out.println("Error: " + e.getMessage());
