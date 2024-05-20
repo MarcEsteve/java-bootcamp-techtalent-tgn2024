@@ -10,7 +10,7 @@ public class UD19ejemplobotonmensaje extends JFrame {
         setSize(300, 200);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        	
         // Crear la barra de menú
         JMenuBar menuBar = new JMenuBar();
         
