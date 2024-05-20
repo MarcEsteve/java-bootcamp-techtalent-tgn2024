@@ -47,7 +47,7 @@ public class MainButtonsMysqlDate {
                 // Conectar a la base de datos y ejecutar la consulta
                 try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/tiendainfo", "root", "");
                      Statement stmt = conn.createStatement();
-                     ResultSet rs = stmt.executeQuery("SELECT * FROM fabricantes LIMIT 5")) {
+                     ResultSet rs = stmt.executeQuery("SELECT * FROM fabricantes LIMIT 8")) {
                     
                     textArea.setText(""); // Limpiar el área de texto
                     while (rs.next()) {
