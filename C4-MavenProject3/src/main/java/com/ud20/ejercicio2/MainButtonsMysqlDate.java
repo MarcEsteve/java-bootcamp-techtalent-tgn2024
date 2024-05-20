@@ -51,7 +51,7 @@ public class MainButtonsMysqlDate {
                     
                     textArea.setText(""); // Limpiar el área de texto
                     while (rs.next()) {
-                        textArea.append("Código del fabricantes: " + rs.getInt("codigo") + ", Nombre: " + rs.getString("nombre") + "\n");
+                        textArea.append("Código del fabricante: " + rs.getInt("codigo") + ", Nombre: " + rs.getString("nombre") + "\n");
                     }
                 } catch (Exception ex) {
                     ex.printStackTrace();
