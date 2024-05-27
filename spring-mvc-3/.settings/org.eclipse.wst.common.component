@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="spring-mvc-3">
+        
+    <wb-module deploy-name="SpringMVCDemo">
+                
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <property name="context-root" value="spring-mvc-3"/>
-        <property name="java-output-path" value="/spring-mvc-3/build/classes"/>
+                
+        <property name="java-output-path" value="/SpringMVCDemo/build/classes"/>
+        <property name="context-root" value="SpringMVCDemo"/>
+            
     </wb-module>
+    
 </project-modules>
