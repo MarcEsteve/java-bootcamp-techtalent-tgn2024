@@ -11,6 +11,7 @@
 	   		background:white ;
 	   }
 	</style>
+	
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/titular.css">
 </head>
 <body>

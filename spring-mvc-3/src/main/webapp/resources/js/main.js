@@ -1,1 +1,1 @@
-window.alert("Prueba3");
+window.alert("Mensaje de alerta Prueba3");
