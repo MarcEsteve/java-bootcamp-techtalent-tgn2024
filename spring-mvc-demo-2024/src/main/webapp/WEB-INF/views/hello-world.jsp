@@ -3,9 +3,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <title>Hello World Titulo nav</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <h1>Hello, World! Titular principal</h1>
+    <p>Párrafo normal</p>
 </body>
 </html>
