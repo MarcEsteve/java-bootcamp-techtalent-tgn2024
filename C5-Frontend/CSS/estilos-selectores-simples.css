@@ -1,0 +1,12 @@
+p.center {
+  text-align: center;
+  color: red;
+}
+
+.center {
+  color: blue;
+}
+
+* {
+    background-color: aquamarine;
+}
