@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p::after {
+        content: " - Sufijo";
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
+      }
+      /* p::before {
+        content: url(astronave.png);
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
+      } */
+      /* p::first-letter {
+        font-size: 200%;
+        color: #8a2be2;
+      } */
+      p::first-line {
+        color: #ff0000;
+        font-variant: small-caps;
+      }
+      ::selection {
+        color: red;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>CSS con pseudo-elemento "after/before"</p>
+    <p>Colocará detrás de los elementos seleccionados contenido específico</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora
+      corrupti possimus perspiciatis provident nam blanditiis molestiae aliquam
+      et deserunt voluptas repudiandae sint error laudantium, omnis quisquam
+      minus illum iusto.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Natus tempora corrupti possimus perspiciatis provident nam blanditiis
+      molestiae aliquam et deserunt voluptas repudiandae sint error laudantium,
+      omnis quisquam minus illum iusto.Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Natus tempora corrupti possimus perspiciatis provident
+      nam blanditiis molestiae aliquam et deserunt voluptas repudiandae sint
+      error laudantium, omnis quisquam minus illum iusto.Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Natus tempora corrupti possimus
+      perspiciatis provident nam blanditiis molestiae aliquam et deserunt
+      voluptas repudiandae sint error laudantium, omnis quisquam minus illum
+      iusto.Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+      tempora corrupti possimus perspiciatis provident nam blanditiis molestiae
+      aliquam et deserunt voluptas repudiandae sint error laudantium, omnis
+      quisquam minus illum iusto.
+    </p>
+  </body>
+</html>

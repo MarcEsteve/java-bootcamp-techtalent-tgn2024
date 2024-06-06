@@ -1,0 +1,12 @@
+input[type="text"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+input[type="submit"] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+  border-radius: 3px;
+}

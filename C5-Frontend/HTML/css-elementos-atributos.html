@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a[target="_blank"] {
+        background-color: yellow;
+      }
+      [title~="flor"] {
+        border: 5px solid yellow;
+      }
+      /* [class|="arriba"] {
+        background-color: yellow;
+      } */
+      [class^="arriba"] {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS [atributo ? = "valor"]</h1>
+    <h2 class="arriba-titular">Bienvenido</h2>
+    <p class="arriba-texto">Hola mundo!</p>
+    <p class="arribacontenido">Aprendiendo CSS y selectores de atributos</p>
+
+    <h1>CSS [atributo ~ = "valor"]</h1>
+    <p>
+      Imágenes con el título del atributo que contenga "flor" con borde
+      amarillo.
+    </p>
+    <img src="flor1.jpg" title="Alguna flor" width="150" height="113" />
+    <img src="otra2.gif" title="flor de loto" width="224" height="162" />
+    <img src="tercera.png" title="arbol floral" width="200" height="358" />
+
+    <h1>CSS [attribute] Selector</h1>
+    <p>Los enlaces con target en amarillo</p>
+    <a href="web1.com">web1.com</a>
+    <a href=" web2.com " target="_blank"> web2.com </a>
+    <a href=" web3.com " target="_top"> web3.com </a>
+  </body>
+</html>
