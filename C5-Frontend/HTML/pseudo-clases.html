@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a:link {
+        color: blue;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: pink;
+      }
+      a:active {
+        color: yellow;
+      }
+      a.rojo:hover {
+        color: #ff0000;
+      }
+      div {
+        background-color: green;
+        color: white;
+        padding: 25px;
+        text-align: center;
+      }
+      div:hover {
+        background-color: blue;
+      }
+      p {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+        color: black;
+      }
+      div:hover p {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML + CSS</h1>
+    <div>
+      Elemento div con texto como un párrafo
+      <p>Mágia! Aqui esta el elemento párrafo oculto con el display:none</p>
+    </div>
+
+    <div>
+      <p>
+        <b><a href="https://pr0j3ct.com/" target="_blank">Enlace Pr0j3ct</a></b>
+      </p>
+    </div>
+
+    <p>
+      <b
+        ><a class="rojo" href="https://sohariscv.org/" target="_blank"
+          >Otro enlace</a
+        ></b
+      >
+    </p>
+
+    <div>
+      <h2>Titular 2</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ad
+        excepturi architecto cumque quisquam molestias hic ipsa tempora error
+        nostrum dolores saepe quasi eaque suscipit modi molestiae facilis,
+        soluta sequi!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi ad
+        excepturi architecto cumque quisquam molestias hic ipsa tempora error
+        nostrum dolores saepe quasi eaque suscipit modi molestiae facilis,
+        soluta sequi!
+      </p>
+    </div>
+
+    <p>párrafo</p>
+  </body>
+</html>
