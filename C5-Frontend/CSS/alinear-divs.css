@@ -1,15 +1,23 @@
 div {
-    width: 40px;
-    height: 65px;
-    line-height: 65px;
-    border: 3px solid gray;
-    padding: 7px;
-    border-radius: 3px;
+    width: 100px; /* Ajusta el tamaño del div para que sea un círculo */
+    height: 100px; /* Ajusta el tamaño del div para que sea un círculo */
+    line-height: 100px; /* Centra el texto verticalmente */
+    border: 5px solid rgb(0, 0, 0);
+    padding: 7px; /* Considera ajustar este valor si es necesario */
+    border-radius: 50%; /* Esto hace que el div sea redondo */
     float: left;
-    font-size: 38px;
+    font-size: 48px; /* Aumenta el tamaño de la fuente */
     text-align: center;
     font-family: helvetica;
     margin-right: 4px;
     margin-top: 16px;
-    color: gray;
+    color: rgb(0, 0, 0); /* Cambia el color del texto */
+    background-color: rgb(255, 194, 194); /* Añade un color de fondo */
+}
+
+a:hover{
+    cursor: default;
+}
+a {
+    text-decoration: none;
 }
