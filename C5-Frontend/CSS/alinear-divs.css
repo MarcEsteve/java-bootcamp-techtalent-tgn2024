@@ -1,0 +1,15 @@
+div {
+    width: 40px;
+    height: 65px;
+    line-height: 65px;
+    border: 3px solid gray;
+    padding: 7px;
+    border-radius: 3px;
+    float: left;
+    font-size: 38px;
+    text-align: center;
+    font-family: helvetica;
+    margin-right: 4px;
+    margin-top: 16px;
+    color: gray;
+}
