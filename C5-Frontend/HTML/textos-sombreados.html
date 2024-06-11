@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto con Sombreado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .text-shadow {
+            font-size: 3em;
+            color: #333;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .multiple-shadows {
+            font-size: 3em;
+            color: #333;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3),
+                         -3px -3px 5px rgba(0, 0, 0, 0.3),
+                         3px -3px 5px rgba(0, 0, 0, 0.3),
+                         -3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .colorful-shadow {
+            font-size: 3em;
+            color: #333;
+            text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5),
+                         -2px -2px 5px rgba(0, 255, 0, 0.5),
+                         2px -2px 5px rgba(0, 0, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="text-shadow">Sombra Simple</p>
+        <p class="multiple-shadows">Sombras Múltiples</p>
+        <p class="colorful-shadow">Sombra Colorida</p>
+    </div>
+</body>
+</html>
