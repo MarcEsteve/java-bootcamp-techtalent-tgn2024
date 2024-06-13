@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Flex Items FLEX BASIS</title>
+    <style>
+      .flex-container {
+        display: flex;
+        align-items: stretch;
+        background-color: red;
+      }
+      .flex-container > div {
+        background-color: blue;
+        color: white;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div style="flex-basis:300px">3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>
