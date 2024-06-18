@@ -24,5 +24,6 @@ switch (new Date().getMonth()) {
     mes = "No ha devuelto ningun mes";
     break;
 }
+
 document.write(new Date().getMonth());
 document.getElementById("mes").innerHTML = "Estamos a " + mes;
