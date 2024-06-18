@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript while</h2>
+
+    <p id="while"></p>
+
+    <script>
+      var text = "";
+      var i = 0;
+      while (i < 10) {
+        if (i == 0) {
+          text += "El número es " + i;
+          i++;
+        } else {
+          text += "<br>El número es " + i;
+          i++;
+        }
+      }
+      document.getElementById("while").innerHTML = text;
+    </script>
+  </body>
+</html>
