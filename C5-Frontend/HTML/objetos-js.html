@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Objecto</h2>
+    <p id="demo"></p>
+    <p id="nombreCompleto"></p>
+
+    <script>
+      var persona = {
+        nombre: "John",
+        apellido: "Smith",
+        edad: 53,
+        colorOjos: "azules",
+        casado: true,
+      };
+
+      document.getElementById("demo").innerHTML =
+        persona.nombre +
+        " " +
+        persona.apellido +
+        " tiene " +
+        persona.edad +
+        " años y tiene los ojos " +
+        persona.colorOjos;
+
+      var person = {
+        // Propiedades
+
+        // Atributos
+        firstName: "John",
+        lastName: "Doe", 
+        id: 5566,
+        // Método
+        fullName: function () {
+          
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      document.getElementById("nombreCompleto").innerHTML =
+        person.fullName();
+    </script>
+  </body>
+</html>
