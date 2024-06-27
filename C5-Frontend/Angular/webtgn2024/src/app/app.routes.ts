@@ -8,6 +8,6 @@ export const routes: Routes = [
     {path: 'about', component: AboutComponent},
     {path: 'portfolio', component: PortfolioComponent},
     {path: 'terminos', component: TermsComponent},
-    {path: '', redirectTo: 'about', pathMatch: 'full'},
+    {path: '', redirectTo: 'portfolio', pathMatch: 'full'},
     {path: '**', component: Pagina404Component}
 ];
