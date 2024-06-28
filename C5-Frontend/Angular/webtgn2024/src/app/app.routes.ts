@@ -7,6 +7,7 @@ import { InterpolationComponent } from './databinding/interpolation/interpolatio
 import { PropertyBindingComponent } from './databinding/property-binding/property-binding.component';
 import { EventBindingComponent } from './databinding/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './databinding/two-ways-binding/two-ways-binding.component';
+import { DOMAccessComponent } from './databinding/dom-access-binding/dom-access-binding.component';
 
 export const routes: Routes = [
     {path: '', component: AboutComponent},
@@ -15,6 +16,7 @@ export const routes: Routes = [
     {path: 'property', component: PropertyBindingComponent},
     {path: 'event', component: EventBindingComponent},
     {path: 'twow', component: TwoWayBindingComponent},
+    {path: 'dom', component: DOMAccessComponent},
     {path: 'terminos', component: TermsComponent},
     {path: 'about', redirectTo: '', pathMatch: 'full'},
     {path: '**', component: Pagina404Component}
