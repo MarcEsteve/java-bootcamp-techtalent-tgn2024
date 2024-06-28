@@ -5,14 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './property-binding.component.html',
   styles: `
   img {
-    width: 500px;
+    width: 300px;
   }
   `
 })
 export class PropertyBindingComponent implements OnInit {
 
-  logoRojo: string = 'https://i.ibb.co/6m6hJwy/santander-red.png';
-  logoBlanco: string = 'https://i.ibb.co/48RWS1F/santander-white.png';
+  logoRojo: string = '/assets/img/team-1.jpg';
+  logoBlanco: string = '/assets/img/team-2.jpg';
   imagen: string = this.logoRojo;
 
   constructor() { }
@@ -24,7 +24,7 @@ export class PropertyBindingComponent implements OnInit {
   cambiarImagen() {
     setInterval(() => {
       this.imagen === this.logoRojo ? this.imagen = this.logoBlanco : this.imagen = this.logoRojo;
-    }, 2000)
+    }, 1000)
   }
 
 }
