@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 /* Reset */
-
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +10,6 @@
 }
 
 /* General */
-
 body {
     font-family: 'Lato', sans-serif;
     color: #718096;
@@ -60,8 +58,6 @@ img {
 }
 
 /* Layout */
-
-
 .container {
     max-width: 920px;
     padding: 24px;
@@ -172,7 +168,6 @@ nav a:hover {
 }
 
 /* Tablas */
-
 table {
     width: 100%;
     margin-bottom: 24px;
