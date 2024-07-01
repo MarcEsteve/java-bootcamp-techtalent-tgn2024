@@ -8,6 +8,9 @@ import { PropertyBindingComponent } from './databinding/property-binding/propert
 import { EventBindingComponent } from './databinding/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './databinding/two-ways-binding/two-ways-binding.component';
 import { DOMAccessComponent } from './databinding/dom-access-binding/dom-access-binding.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { NgIfComponent } from './directives/ng-if/ng-if.component';
+import { NgSwitchComponent } from './directives/ng-switch/ng-switch.component';
 
 export const routes: Routes = [
     {path: '', component: AboutComponent},
@@ -17,6 +20,9 @@ export const routes: Routes = [
     {path: 'event', component: EventBindingComponent},
     {path: 'twow', component: TwoWayBindingComponent},
     {path: 'dom', component: DOMAccessComponent},
+    {path: 'pipes', component: PipesComponent},
+    {path: 'if', component: NgIfComponent},
+    {path: 'switch', component: NgSwitchComponent},
     {path: 'terminos', component: TermsComponent},
     {path: 'about', redirectTo: '', pathMatch: 'full'},
     {path: '**', component: Pagina404Component}

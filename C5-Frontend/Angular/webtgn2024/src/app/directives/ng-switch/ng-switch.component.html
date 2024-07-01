@@ -1,0 +1,23 @@
+<div class="card">
+  <h1>Ejemplo de directiva [ngSwitch]</h1>
+  <div [ngSwitch]="mensaje">
+    <div *ngSwitchCase="'success'">El registro fue creado correctamente</div>
+    <div *ngSwitchCase="'warning'">
+      Error de conexión, inténtelo de nuevo más tarde
+    </div>
+    <div *ngSwitchCase="'danger'">Servicio no disponible</div>
+    <div *ngSwitchDefault>Seleccione un estado</div>
+  </div>
+</div>
+
+<div class="buttons">
+  <button class="success" (click)="cambiarMensaje('success')">
+    Mostrar Éxito
+  </button>
+  <button class="warning" (click)="cambiarMensaje('warning')">
+    Mostrar Advertencia
+  </button>
+  <button class="danger" (click)="cambiarMensaje('danger')">
+    Mostrar Peligro
+  </button>
+</div>

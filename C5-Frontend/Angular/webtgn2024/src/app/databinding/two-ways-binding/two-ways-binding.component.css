@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-size: 24px;
-    color: #008489;
+    color: #1d8acb;
     margin-bottom: 12px;
 }
 
@@ -33,7 +33,7 @@ p {
 }
 
 b {
-    color: #008489;
+    color: #1d8acb;
 }
 
 hr {
@@ -129,7 +129,7 @@ nav a {
 nav a.activo {
     color: #287d78;
     padding-bottom: 12px;
-    border-bottom: 2px solid #008489;
+    border-bottom: 2px solid #1d8acb;
 }
 
 nav a:active,
@@ -175,20 +175,20 @@ table {
 
 th {
     padding: 10px 20px;
-    background-color: #008489;
+    background-color: #1d8acb;
     color: white;
     text-align: left;
 }
 
 td {
     padding: 10px 20px;
-    border: 1px solid #008489;
+    border: 1px solid #1d8acb;
 }
 
 .edit-table td:nth-child(4) {
     padding: 10px 20px;
-    border: 1px solid #008489;
-    background-color: #008489;
+    border: 1px solid #1d8acb;
+    background-color: #1d8acb;
     color: white;
     cursor: pointer;
 }
@@ -208,8 +208,8 @@ button {
     padding: 10px;
     margin: 20px 0 20px 5px;
     color: white;
-    background-color: #008489;
-    border: #008489 solid 1px;
+    background-color: #1d8acb;
+    border: #1d8acb solid 1px;
     cursor: pointer;
     transition: background-color 400ms ease-in-out;
 
@@ -217,7 +217,7 @@ button {
 
 button.outline {
     background-color: white;
-    color: #008489;
+    color: #1d8acb;
     margin-right: 10px;
 }
 

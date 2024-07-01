@@ -1,0 +1,9 @@
+<div class="card">
+    <h1>Ejemplo de directiva *ngIf (y else)</h1>
+    <p>Introduzca la puntuación</p>
+    <input type="number" [(ngModel)]="puntuacion">
+    <p *ngIf="puntuacion && puntuacion >=0 && puntuacion <= 10; else aviso">La puntuación obtenida es {{puntuacion}}</p>
+    <ng-template #aviso>
+        <p *ngIf="puntuacion">Introduzca un valor entre 0 y 10</p>
+    </ng-template>
+</div>

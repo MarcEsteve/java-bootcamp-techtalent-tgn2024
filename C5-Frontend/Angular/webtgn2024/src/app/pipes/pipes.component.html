@@ -1,0 +1,150 @@
+<div class="card l">
+    <h1>Pipes de texto</h1>
+    <hr>
+    <table>
+      <tr>
+        <th>Pipe</th>
+        <th>Valor sin pipe</th>
+        <th>Valor con pipe</th>
+      </tr>
+      <tr>
+        <td>Uppercase</td>
+        <td>{{texto}}</td>
+        <td>{{texto | uppercase}}</td>
+      </tr>
+      <tr>
+        <td>Lowercase</td>
+        <td>{{texto}}</td>
+        <td>{{texto | lowercase}}</td>
+      </tr>
+      <tr>
+        <td>Titlecase</td>
+        <td>{{texto}}</td>
+        <td>{{texto | titlecase}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="card l">
+    <h1>Pipe slice</h1>
+    <hr>
+    <table>
+      <tr>
+        <th>Pipe</th>
+        <th>Valor sin pipe</th>
+        <th>Valor con pipe</th>
+      </tr>
+      <tr>
+        <td>Slice</td>
+        <td>{{id}}</td>
+        <td>{{id | slice: -3}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="card l">
+    <h1>Pipe date</h1>
+    <hr>
+    <table>
+      <tr>
+        <th>Pipe</th>
+        <th>Valor sin pipe</th>
+        <th>Valor con pipe</th>
+      </tr>
+      <tr>
+        <td>date</td>
+        <td>{{fecha}}</td>
+        <td>{{fecha | date: "dd/MM/yyyy hh:mm"}}</td>
+      </tr>
+      <tr>
+        <td>date</td>
+        <td>{{fecha}}</td>
+        <td>{{fecha | date: "long"}}</td> <!-- medium y short -->
+      </tr>
+    </table>
+  </div>
+  <div class="card l">
+    <h1>Pipe decimal</h1>
+    <hr>
+    <table>
+      <tr>
+        <th>Pipe</th>
+        <th>Valor sin pipe</th>
+        <th>Valor con pipe</th>
+      </tr>
+      <tr>
+        <td>Dos decimales</td>
+        <td>{{importe}}</td>
+        <!-- <numero-minimo-digitos>.<numero-minimo-decimales>-<numero-máximo-decimales> -->
+        <td>{{importe | number: "0.2-2"}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="card l">
+    <h1>Pipe percent</h1>
+    <hr>
+    <table>
+      <tr>
+        <th>Pipe</th>
+        <th>Valor sin pipe</th>
+        <th>Valor con pipe</th>
+      </tr>
+      <tr>
+        <td>Porcentual con dos decimales</td>
+        <td>{{aciertos}}</td>
+        <td>{{aciertos | percent: "0.2-2"}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="card l">
+    <h1>Pipe currency</h1>
+    <hr>
+    <table>
+      <tr>
+        <th>Pipe</th>
+        <th>Valor sin pipe</th>
+        <th>Valor con pipe</th>
+      </tr>
+      <tr>
+        <td>Moneda euro</td>
+        <td>{{importe}}</td>
+        <td>{{importe | currency: "EUR": true}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="card l">
+    <h1>Pipe JSON (desarrollo)</h1>
+    <hr>
+    <table>
+      <tr>
+        <th>Pipe</th>
+        <th>Valor sin pipe</th>
+        <th>Valor con pipe</th>
+      </tr>
+      <tr>
+        <td>Objeto a JSON</td>
+        <td>{{actor}}</td>
+        <td>{{actor | json}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="card l">
+    <h1>Pipe personalizado</h1>
+    <hr>
+    <table>
+      <tr>
+        <th>Pipe</th>
+        <th>Valor sin pipe</th>
+        <th>Valor con pipe</th>
+      </tr>
+      <tr>
+        <td>Número</td>
+        <td>{{cantidad}}</td>
+        <td>{{cantidad | numero: 4}}</td>
+      </tr>
+      <tr>
+        <td>Número con moneda</td>
+        <td>{{cantidad}}</td>
+        <td>{{cantidad | numero: 2: moneda}}</td>
+      </tr>
+    </table>
+  </div>
+  

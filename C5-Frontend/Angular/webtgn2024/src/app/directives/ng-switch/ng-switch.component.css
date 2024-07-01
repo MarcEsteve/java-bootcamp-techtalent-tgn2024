@@ -1,0 +1,46 @@
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button.success {
+  background-color: #28a745; /* Tono verde de éxito */
+}
+
+button.success:hover {
+  background-color: #218838;
+}
+
+button.warning {
+  background-color: #ffc107; /* Naranja adecuado para advertencia */
+  color: black; /* El texto en negro para mejor legibilidad */
+}
+
+button.warning:hover {
+  background-color: #e0a800;
+}
+
+button.danger {
+  background-color: #dc3545; /* Rojo para peligro */
+}
+
+button.danger:hover {
+  background-color: #c82333;
+}
