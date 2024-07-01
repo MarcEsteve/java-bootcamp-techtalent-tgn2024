@@ -6,9 +6,12 @@ import { Component, ElementRef, OnInit, QueryList, Renderer2, ViewChild, ViewChi
   templateUrl: './dom-access-binding.component.html',
   styleUrl: './dom-access-binding.component.css'
 })
+
 export class DOMAccessComponent implements OnInit {
 
-  @ViewChild('lista') listaRef: ElementRef | any; // Sustituye a document.getElementByid('lista')
+  @ViewChild('lista') listaRef: ElementRef | any; 
+  // Sustituye a document.getElementByid('lista')
+
   @ViewChildren('item') itemsRef: QueryList<any> | any;
 
   constructor(private renderer: Renderer2) {

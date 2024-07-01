@@ -4,17 +4,13 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-property-binding',
   standalone:true,
   templateUrl: './property-binding.component.html',
-  styles: `
-  img {
-    width: 300px;
-  }
-  `
+  styleUrl: './property-binding.component.css'
 })
 export class PropertyBindingComponent implements OnInit {
 
-  logoRojo: string = '/assets/img/team-1.jpg';
-  logoBlanco: string = '/assets/img/team-2.jpg';
-  imagen: string = this.logoRojo;
+  team1: string = '/assets/img/team-1.jpg';
+  team2: string = '/assets/img/team-2.jpg';
+  imagen: string = this.team1;
 
   constructor() { }
 
@@ -24,7 +20,7 @@ export class PropertyBindingComponent implements OnInit {
 
   cambiarImagen() {
     setInterval(() => {
-      this.imagen === this.logoRojo ? this.imagen = this.logoBlanco : this.imagen = this.logoRojo;
+      this.imagen === this.team1 ? this.imagen = this.team2 : this.imagen = this.team1;
     }, 1000)
   }
 
