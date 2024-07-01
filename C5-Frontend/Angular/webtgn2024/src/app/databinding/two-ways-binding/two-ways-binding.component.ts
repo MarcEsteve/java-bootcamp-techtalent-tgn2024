@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './two-ways-binding.component.html',
-  styles: ``
+  styleUrl:'./two-ways-binding.component.css'
 })
 export class TwoWayBindingComponent implements OnInit {
 

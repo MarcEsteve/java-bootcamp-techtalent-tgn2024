@@ -4,7 +4,7 @@ import { Component, ElementRef, OnInit, QueryList, Renderer2, ViewChild, ViewChi
   selector: 'app-dom-access-binding',
   standalone: true,
   templateUrl: './dom-access-binding.component.html',
-  styles: ``
+  styleUrl: './dom-access-binding.component.css'
 })
 export class DOMAccessComponent implements OnInit {
 

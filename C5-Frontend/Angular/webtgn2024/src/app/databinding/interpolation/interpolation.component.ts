@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './interpolation.component.html',
-  styleUrl: './interpolation.component.css',
+  styleUrl: './interpolation.component.css'
 })
 export class InterpolationComponent {
   actor: any = {

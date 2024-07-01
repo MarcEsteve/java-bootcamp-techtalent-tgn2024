@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './event-binding.component.html',
-  styles: ``
+  styleUrl: './event-binding.component.css'
 })
 
 export class EventBindingComponent implements OnInit {
