@@ -14,10 +14,12 @@ import { NgSwitchComponent } from './directives/ng-switch/ng-switch.component';
 import { NgForComponent } from './directives/ng-for/ng-for.component';
 import { NgClassComponent } from './directives/ng-class/ng-class.component';
 import { NgStyleComponent } from './directives/ng-style/ng-style.component';
+import { TablaClientesComponent } from './clientes/tabla-clientes/tabla-clientes.component';
 
 export const routes: Routes = [
     {path: '', component: AboutComponent},
     {path: 'portfolio', component: PortfolioComponent},
+    {path: 'clientes', component: TablaClientesComponent},
     {path: 'interpol', component: InterpolationComponent},
     {path: 'property', component: PropertyBindingComponent},
     {path: 'event', component: EventBindingComponent},
