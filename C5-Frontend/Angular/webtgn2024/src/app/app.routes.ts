@@ -12,6 +12,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { NgIfComponent } from './directives/ng-if/ng-if.component';
 import { NgSwitchComponent } from './directives/ng-switch/ng-switch.component';
 import { NgForComponent } from './directives/ng-for/ng-for.component';
+import { NgClassComponent } from './directives/ng-class/ng-class.component';
+import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 
 export const routes: Routes = [
     {path: '', component: AboutComponent},
@@ -25,6 +27,8 @@ export const routes: Routes = [
     {path: 'if', component: NgIfComponent},
     {path: 'switch', component: NgSwitchComponent},
     {path: 'for', component: NgForComponent},
+    {path: 'class', component: NgClassComponent},
+    {path: 'style', component: NgStyleComponent},
     {path: 'terminos', component: TermsComponent},
     {path: 'about', redirectTo: '', pathMatch: 'full'},
     {path: '**', component: Pagina404Component}

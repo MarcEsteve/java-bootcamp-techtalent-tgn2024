@@ -1,0 +1,8 @@
+<div class="card">
+    <h1>Ejemplo de directiva [ngClass]</h1>
+    <div *ngFor="let jugador of jugadores" 
+         class="player-box" 
+         [ngClass]="jugador.equipo || 'no-team'">
+        {{jugador.nombre}}
+    </div>
+</div>
