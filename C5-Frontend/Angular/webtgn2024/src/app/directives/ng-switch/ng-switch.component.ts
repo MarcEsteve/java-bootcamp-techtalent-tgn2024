@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './ng-switch.component.css',
 })
 export class NgSwitchComponent implements OnInit {
-  mensaje: string = 'success';
+  mensaje: string = 'warning';
 
   constructor() {}
 

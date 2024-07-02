@@ -11,6 +11,7 @@ import { DOMAccessComponent } from './databinding/dom-access-binding/dom-access-
 import { PipesComponent } from './pipes/pipes.component';
 import { NgIfComponent } from './directives/ng-if/ng-if.component';
 import { NgSwitchComponent } from './directives/ng-switch/ng-switch.component';
+import { NgForComponent } from './directives/ng-for/ng-for.component';
 
 export const routes: Routes = [
     {path: '', component: AboutComponent},
@@ -23,6 +24,7 @@ export const routes: Routes = [
     {path: 'pipes', component: PipesComponent},
     {path: 'if', component: NgIfComponent},
     {path: 'switch', component: NgSwitchComponent},
+    {path: 'for', component: NgForComponent},
     {path: 'terminos', component: TermsComponent},
     {path: 'about', redirectTo: '', pathMatch: 'full'},
     {path: '**', component: Pagina404Component}

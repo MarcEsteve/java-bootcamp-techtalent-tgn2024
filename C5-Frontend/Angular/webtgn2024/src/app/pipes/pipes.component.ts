@@ -23,7 +23,8 @@ export class PipesComponent {
   }
 
   cantidad = 1576571.657657;
-  moneda = '€';
+  monedaEU = '€';
+  monedaDL = '$'
 
   ngOnInit() {
     this.id = '000' + this.id;

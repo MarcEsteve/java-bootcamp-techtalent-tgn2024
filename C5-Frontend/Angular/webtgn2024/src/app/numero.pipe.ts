@@ -14,7 +14,7 @@ export class NumeroPipe implements PipeTransform {
     } else {
       valorRedondeado = Math.round(value * factor) / factor;
     }
-    const valorFormateado = new Intl.NumberFormat('de-DE', {minimumFractionDigits: decimales}).format(valorRedondeado);
+    const valorFormateado = new Intl.NumberFormat('es-ES', {minimumFractionDigits: decimales}).format(valorRedondeado);
     return moneda ? valorFormateado + ' ' + moneda : valorFormateado;
   }
 
