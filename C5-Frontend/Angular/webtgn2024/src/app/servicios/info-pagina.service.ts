@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,7 +6,17 @@ import { Injectable } from '@angular/core';
 })
 export class InfoPaginaService {
 
-  constructor() {
-    console.log("Servicio de infoPagina listo");
-   }
+  info: InfoPagina = {};
+
+  constructor(private http: HttpClient) {
+    // console.log("Servicio de infoPagina listo")
+
+    // Leer el archivo JSON
+    this.http
+    .get('assets/data/data-pagina.json')
+    .subscribe((resp: InfoPagina) => {
+      this.info = resp; // provar resp. I veurem les propietats JSON
+      console.log(resp);
+    });
+  }
 }
