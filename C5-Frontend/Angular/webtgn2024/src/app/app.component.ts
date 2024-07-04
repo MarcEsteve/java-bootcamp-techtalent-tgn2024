@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { InfoPaginaService } from './servicios/info-pagina.service';
 // import { AboutComponent } from './pages/about/about.component';
 // import { TermsComponent } from './pages/terms/terms.component';
 // import { PortfolioComponent } from './pages/portfolio/portfolio.component';
@@ -21,5 +22,5 @@ import { FooterComponent } from './shared/footer/footer.component';
   styles: '',
 })
 export class AppComponent {
-  title = 'Mi primera app';
+  title = 'Web App Angular TGN 2024';
 }

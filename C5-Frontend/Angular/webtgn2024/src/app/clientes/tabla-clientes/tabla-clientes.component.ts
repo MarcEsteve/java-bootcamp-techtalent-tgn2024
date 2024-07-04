@@ -14,6 +14,7 @@ export class TablaClientesComponent implements OnInit {
 
   clientes: Array<any> = []
 
+  //Inyección de la dependencia (DI) del servicio con los datos de clientes 
   constructor(private clientesService: ClientesService) { }
 
   ngOnInit(): void {
