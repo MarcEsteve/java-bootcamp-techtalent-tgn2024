@@ -5,4 +5,6 @@ export interface IEmployee {
   nom: string;
   titulo: string;
   img: string;
+  frase: string;
+  twitter: string;
 }

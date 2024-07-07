@@ -4,14 +4,8 @@ import { EmployeeService } from './employee.service';
 
 @Component({
   selector: 'app-employee-list',
-  template: `
-    <h2>Lista empleados</h2>
-    <ul *ngFor="let pepito of employeesList">
-      <li>Nombre: {{ pepito.nom }} - Titulo: {{ pepito.titulo }}</li>
-      <img [src]="pepito.img">
-    </ul>
-  `,
-  styles: [],
+  templateUrl: 'employee-list.component.html',
+  styleUrl: 'employee-list.component.css'
 })
 export class EmployeeListComponent implements OnInit {
   public employeesList: IEmployee[] = [];

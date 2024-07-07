@@ -8,5 +8,6 @@ import { IEmployee } from './employeeInterface';
   template: `
     <app-employee-list></app-employee-list>
   `,
+  styleUrl: 'app.component.css'
 })
 export class AppComponent {}

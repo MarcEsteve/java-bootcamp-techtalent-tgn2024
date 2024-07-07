@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { IEmployee } from '../../employeeInterface';
+import { IEmployee } from '../../interfaces/employeeInterface';
 import { EmployeeService } from '../../servicios/employee.service';
+import { provideHttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-employee-list',
@@ -12,6 +13,7 @@ import { EmployeeService } from '../../servicios/employee.service';
     </ul>
   `,
   styles: [],
+  providers: [provideHttpClient(withFetch())]
 })
 export class EmployeeListComponent implements OnInit {
   public employeesList: IEmployee[] = [];
