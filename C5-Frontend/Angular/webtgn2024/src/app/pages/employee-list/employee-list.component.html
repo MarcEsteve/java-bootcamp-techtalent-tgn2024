@@ -1,0 +1,17 @@
+<div class="ae-grid au-xs-ta-center au-mb-4">
+  <div
+    *ngFor="let persona of employeesList"
+    class="animate__animated animate__fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3"
+  >
+    <img [src]="persona.img" alt="" class="au-mb-3" />
+    <h5 class="ae-u-bolder au-mt-2">{{ persona.nom }}</h5>
+    <p class="ae-u-bolder au-mb-3">{{ persona.titulo }}</p>
+    <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{ persona.frase }}</p>
+    <a
+      href="https://twitter.com/{{ persona.twitter }}"
+      class="ae-u-bolder au-underline"
+      target="_blank"
+      >&#64;{{ persona.twitter }}</a
+    >
+  </div>
+</div>

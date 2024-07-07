@@ -33,7 +33,7 @@ export const routes: Routes = [
     {path: 'class', component: NgClassComponent},
     {path: 'style', component: NgStyleComponent},
     {path: 'terminos', component: TermsComponent},
-    {path: 'empleados', component: EmployeeListComponent},
+    {path: 'otroabout', component: EmployeeListComponent},
     {path: 'about', redirectTo: '', pathMatch: 'full'},
     {path: '**', component: Pagina404Component}
 ];
