@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -21,6 +21,7 @@ import { InfoPaginaService } from './servicios/info-pagina.service';
   templateUrl: './app.component.html',
   styles: '',
 })
+
 export class AppComponent {
   title = 'Web App Angular TGN 2024';
 }

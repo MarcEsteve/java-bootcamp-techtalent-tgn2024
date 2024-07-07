@@ -1,7 +1,4 @@
 import { Component, Inject } from '@angular/core';
-import { InfoPaginaService } from '../../servicios/info-pagina.service';
-import { DatosService } from '../../servicios/datos.service';
-
 
 @Component({
   selector: 'app-about',
@@ -13,7 +10,4 @@ import { DatosService } from '../../servicios/datos.service';
 export class AboutComponent {
   nombre = 'Angelina';
 
-  constructor (@Inject(DatosService) public _datos:DatosService) {
-  }
-  
 }
