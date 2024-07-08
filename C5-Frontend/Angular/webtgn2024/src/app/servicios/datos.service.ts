@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { InfoPagina } from '../interfases/info-pagina.interface';
+import { InfoPagina } from '../interfaces/info-pagina.interface';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
