@@ -13,7 +13,3 @@ bootstrapApplication(AppComponent, appConfig).catch((err) =>
 bootstrapApplication(EmployeeListComponent, {
   providers: [provideHttpClient()],
 });
-
-// bootstrapApplication(CookiesComponent, {
-//   providers: [CookieService],
-// });

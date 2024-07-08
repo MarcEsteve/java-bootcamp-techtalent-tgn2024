@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Login</h2>
+  <form (ngSubmit)="login()">
+    <input
+      [(ngModel)]="username"
+      (ngModelChange)="onUsernameChange($event)"
+      name="username"
+      placeholder="Nombre de usuario"
+      required
+    />
+    <input
+      [(ngModel)]="password"
+      (ngModelChange)="onPasswordChange($event)"
+      name="password"
+      type="password"
+      placeholder="Contraseña"
+      required
+    />
+    <button type="submit">Iniciar sesión</button>
+  </form>
+  <div *ngIf="authService.isLoggedIn()">
+    <p>Bienvenido, {{ authService.getUsername() }}!</p>
+    <button (click)="logout()">Cerrar sesión</button>
+  </div>
+  <p *ngIf="errorMessage">{{ errorMessage }}</p>
+</div>
