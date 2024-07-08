@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CookieService } from 'ngx-cookie-service';
+// import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-cookies',
@@ -14,15 +14,15 @@ export class CookiesComponent {
   titulo = 'Ejemplo de Cookies';
   cookieValue: string ='';
 
-  constructor(private cookieService: CookieService) {}
+  // constructor(private cookieService: CookieService) {}
 
-  setCookie() {
-    this.cookieService.set('Test', 'Hello World');
-    this.cookieValue = this.cookieService.get('Test');
-  }
+  // setCookie() {
+  //   this.cookieService.set('Test', 'Hello World');
+  //   this.cookieValue = this.cookieService.get('Test');
+  // }
 
-  deleteCookie() {
-    this.cookieService.delete('Test');
-    this.cookieValue = this.cookieService.get('Test');
-  }
+  // deleteCookie() {
+  //   this.cookieService.delete('Test');
+  //   this.cookieValue = this.cookieService.get('Test');
+  // }
 }

@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>{{ titulo }}</h1>
+  <p>
+    Después de establecer una cookie revisa tu navegador y comprueba que exista,
+    también puedes "eliminar" la cookie, o también si "caduca"
+  </p>
+  <button (click)="setCookie()">Establecer Cookie</button>
+  <button (click)="deleteCookie()">Eliminar Cookie</button>
+  <p>Valor de la Cookie 'Test': {{ cookieValue }}</p>
+  <button (click)="setColorVerde()">Color verde</button>
+  <p id="cookiecolor">Párrafo que cambia de color por la cookie</p>
+
+  <h2>Login</h2>
+  <div *ngIf="!username">
+    <input #usernameInput placeholder="Nombre de usuario" />
+    <input #passwordInput type="password" placeholder="Contraseña" />
+    <button (click)="login(usernameInput, passwordInput)">Login</button>
+  </div>
+  <div *ngIf="username">
+    <p>Bienvenido, {{ username }}!</p>
+    <button (click)="logout()">Logout</button>
+  </div>
+</div>

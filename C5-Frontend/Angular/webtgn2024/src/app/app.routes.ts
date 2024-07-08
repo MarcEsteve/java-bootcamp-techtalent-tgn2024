@@ -17,6 +17,7 @@ import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 import { TablaClientesComponent } from './clientes/tabla-clientes/tabla-clientes.component';
 import { EmployeeListComponent } from './pages/employee-list/employee-list.component';
 import { CookiesComponent } from './pages/cookies/cookies.component';
+import { CookieTestComponent } from './pages/cookie-test/cookie-test.component';
 
 export const routes: Routes = [
     {path: '', component: AboutComponent},
@@ -36,6 +37,7 @@ export const routes: Routes = [
     {path: 'terminos', component: TermsComponent},
     {path: 'otroabout', component: EmployeeListComponent},
     {path: 'cookies', component: CookiesComponent},
+    {path: 'cookie-test', component: CookieTestComponent},
     {path: 'about', redirectTo: '', pathMatch: 'full'},
     {path: '**', component: Pagina404Component}
 ];
