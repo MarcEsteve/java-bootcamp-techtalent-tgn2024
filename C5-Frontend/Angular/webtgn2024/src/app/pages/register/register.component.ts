@@ -23,7 +23,7 @@ export class RegisterComponent {
 
   loadUsers() {
     // Realizar una solicitud GET para obtener los usuarios actuales desde el archivo JSON
-    this.http.get<User[]>('/assets/usuarios.json').subscribe(
+    this.http.get<User[]>('https://webapp-angular-tgn-2024-default-rtdb.europe-west1.firebasedatabase.app/usuarios.json').subscribe(
       users => {
         this.users = users;
       },
@@ -49,7 +49,7 @@ export class RegisterComponent {
     this.users.push(newUser);
 
     // Guardar el array de usuarios actualizado en el archivo JSON
-    this.http.put('/assets/usuarios.json', this.users).subscribe(
+    this.http.put('https://webapp-angular-tgn-2024-default-rtdb.europe-west1.firebasedatabase.app/usuarios.json', this.users).subscribe(
       () => {
         alert('Registro exitoso');
         this.username = '';
