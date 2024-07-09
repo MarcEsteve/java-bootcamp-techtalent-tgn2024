@@ -1,4 +1,4 @@
-<div class="container">
+<div *ngIf="authService.isLoggedIn() === false" class="container">
   <h2>Login</h2>
   <form (ngSubmit)="login()">
     <input
@@ -18,9 +18,14 @@
     />
     <button type="submit">Iniciar sesión</button>
   </form>
-  <div *ngIf="authService.isLoggedIn()">
-    <p>Bienvenido, {{ authService.getUsername() }}!</p>
-    <button (click)="logout()">Cerrar sesión</button>
-  </div>
-  <p *ngIf="errorMessage">{{ errorMessage }}</p>
+  <hr>
+  <p>Si no tienes usuario:</p>
+  <button><a routerLink="/register">Regístrate</a></button>
 </div>
+<div *ngIf="authService.isLoggedIn()" class="container">
+  <p>Bienvenido, {{ authService.getUsername() | uppercase }}!</p>
+  <button (click)="logout()">Cerrar sesión</button>
+  <button><a routerLink="/perfil">Perfil de usuario</a></button>
+</div>
+<p *ngIf="errorMessage">{{ errorMessage }}</p>
+

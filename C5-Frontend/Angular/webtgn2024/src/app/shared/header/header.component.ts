@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, TitleCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AuthService } from '../../servicios/auth.service';
@@ -6,7 +6,7 @@ import { AuthService } from '../../servicios/auth.service';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, CommonModule],
+  imports: [RouterLink, CommonModule, TitleCasePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

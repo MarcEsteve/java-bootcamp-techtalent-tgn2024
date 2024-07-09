@@ -1,10 +1,24 @@
-<div class="ae-grid au-xs-ta-center au-mb-4">
-    <div
-      *ngFor="let usuario of usuarios"
-      class="animate__animated animate__fadeIn ae-grid__item item-lg-4 ae-kappa au-mb-3"
-    >
-      <h5 class="ae-u-bolder au-mt-2">{{ usuario.nom }}</h5>
-      <p class="ae-u-bolder au-mb-3">{{ usuario.titulo }}</p>
-      <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{ usuario.frase }}</p>
-    </div>
+<div
+  *ngIf="authService.isLoggedIn()"
+  class="animate__animated animate__fadeIn ae-grid au-xs-ta-center au-mb-4 container"
+>
+  <!-- <div
+    class="ae-grid__item item-lg-4 ae-kappa au-mb-3"
+  > -->
+  <h5 class="ae-u-bolder au-mb-3">
+    Nombre de usuario: {{ authService.getUsername() | titlecase }}
+  </h5>
+  <p class="ae-u-bolder au-mb-3 au-pl-4 au-pr-4">{{ authService.getUsername() }}</p>
+  <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{ authService.getUsername() }}</p>
+  <button (click)="authService.logout()">Cerrar sesión</button>
+</div>
+<!-- </div> -->
+<div class="container" *ngIf="authService.isLoggedIn() === false">
+  <div
+    class="animate__animated animate__fadeIn ae-grid au-xs-ta-center au-mb-4"
+  >
+    <h5 class="ae-u-bolder au-mt-2">Sesión cerrada</h5>
+    <button><a routerLink="/login">Iniciar sesión</a></button>
+    <button><a routerLink="/register">Registrarse</a></button>
   </div>
+</div>
