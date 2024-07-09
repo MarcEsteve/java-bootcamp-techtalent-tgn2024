@@ -39,9 +39,10 @@ export class RegisterComponent {
     if (this.users.some(user => user.usuario === this.username)) {
       alert('El nombre de usuario ya está registrado');
       return;
-    }
+    } 
 
-    // Agregar el nuevo usuario al array
+    if (this.username !== '' && this.password !== '') {
+      // Agregar el nuevo usuario al array
     const newUser: User = {
       usuario: this.username,
       pass: this.password
@@ -60,5 +61,9 @@ export class RegisterComponent {
         alert('Error al registrar el usuario');
       }
     );
+    } else {
+      alert('Rellena los campos vacios');
+    }
+    
   }
 }
