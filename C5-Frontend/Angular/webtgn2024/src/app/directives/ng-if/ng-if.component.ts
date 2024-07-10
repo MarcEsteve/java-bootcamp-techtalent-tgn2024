@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -7,15 +7,8 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './ng-if.component.html',
-  styles: ``
+  styles: ``,
 })
-export class NgIfComponent implements OnInit {
-
+export class NgIfComponent{
   puntuacion: number | null = null;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

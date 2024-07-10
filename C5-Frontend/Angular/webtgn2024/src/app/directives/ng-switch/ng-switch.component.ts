@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ng-switch',
@@ -8,12 +8,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './ng-switch.component.html',
   styleUrl: './ng-switch.component.css',
 })
-export class NgSwitchComponent implements OnInit {
+export class NgSwitchComponent{
   mensaje: string = 'warning';
-
-  constructor() {}
-
-  ngOnInit(): void {}
 
   cambiarMensaje(nuevoMensaje: string) {
     this.mensaje = nuevoMensaje;
