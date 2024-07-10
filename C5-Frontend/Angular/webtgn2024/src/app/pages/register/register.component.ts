@@ -46,7 +46,7 @@ export class RegisterComponent {
       // Agregar el nuevo usuario al array
     const newUser: User = {
       usuario: this.username,
-      pass: btoa(this.password)
+      pass: this.password //btoa
     };
     this.users.push(newUser);
 
