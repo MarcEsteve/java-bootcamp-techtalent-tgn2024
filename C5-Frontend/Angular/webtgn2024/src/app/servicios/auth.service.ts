@@ -4,8 +4,6 @@ import { CookieService } from 'ngx-cookie-service';
 import { Observable } from 'rxjs';
 import { User } from '../interfaces/user.interface';
 
-
-
 @Injectable({
   providedIn: 'root'
 })

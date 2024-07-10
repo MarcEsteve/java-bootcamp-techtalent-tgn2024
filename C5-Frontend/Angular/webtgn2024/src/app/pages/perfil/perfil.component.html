@@ -14,8 +14,7 @@
   <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">Profesión: {{ usuario?.profesion }}</p>
   <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">Rol: {{ usuario?.rol }}</p>
   <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">Teléfono: {{ usuario?.telefono }}</p>
-  <!-- <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">Pass: {{ usuario?.pass | password }}</p> -->
-  <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">Pass: {{ usuario?.pass }}</p>
+  <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">Pass: {{ psw | password }}</p>
   <button (click)="authService.logout()">Cerrar sesión</button>
 </div>
 <!-- </div> -->
