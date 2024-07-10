@@ -2,11 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
 import { Observable } from 'rxjs';
+import { User } from '../interfaces/user.interface';
 
-interface User {
-  usuario: string;
-  pass: string;
-}
+
 
 @Injectable({
   providedIn: 'root'
@@ -46,4 +44,10 @@ export class AuthService {
     this.cookieService.delete('username');
     this.cookieService.delete('isLoggedIn');
   }
+
+  getUsuarioDB(): User | undefined {
+    const username = this.getUsername();
+    return this.users.find(user => user.usuario === username);
+  }
+
 }

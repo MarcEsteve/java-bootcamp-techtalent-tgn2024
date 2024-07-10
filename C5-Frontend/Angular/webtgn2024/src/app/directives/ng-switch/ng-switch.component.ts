@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './ng-switch.component.css',
 })
 export class NgSwitchComponent{
-  mensaje: string = 'warning';
+  mensaje: string = 'success';
 
   cambiarMensaje(nuevoMensaje: string) {
     this.mensaje = nuevoMensaje;
