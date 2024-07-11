@@ -1,7 +1,6 @@
+// "Campos" de mi base de datos y el tipo de valor recibido, defino que recibo
 export interface IEmployee {
-  id?: number;
-  name?: string;
-  age?: number;
+  _id: number;
   nom: string;
   titulo: string;
   img: string;

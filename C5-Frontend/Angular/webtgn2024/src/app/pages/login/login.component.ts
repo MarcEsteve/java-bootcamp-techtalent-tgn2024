@@ -18,21 +18,22 @@ export class LoginComponent {
 
   constructor(public authService: AuthService) {}
 
-  onUsernameChange(value: string) {
-    this.username = value;
-  }
+  
+  login(valoruserinput:string, valorpassinput:string) {
+    this.username = valoruserinput;
+    console.log(this.username);
+    this.password = valorpassinput;
+    console.log(this.password);
+    setTimeout(() => {
+      if (this.authService.login(this.username, this.password)) {
+        this.errorMessage = "";
+        alert('Inicio de sesión exitoso');
+      } else {
+        this.errorMessage = 'son incorrectos';
+      }
+    }, 1000);
+  
 
-  onPasswordChange(value: string) {
-    this.password = value;
-  }
-
-  login() {
-    if (this.authService.login(this.username, this.password)) {
-      this.errorMessage = '';
-      alert('Inicio de sesión exitoso');
-    } else {
-      this.errorMessage = 'Usuario o contraseña incorrectos';
-    }
   }
 
   logout() {

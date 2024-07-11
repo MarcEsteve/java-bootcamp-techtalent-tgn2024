@@ -1,19 +1,19 @@
 <div *ngIf="authService.isLoggedIn() === false" class="container">
   <h2>Login</h2>
-  <form (ngSubmit)="login()">
+  <form (ngSubmit)="login(username,password)">
     <input
       [(ngModel)]="username"
-      (ngModelChange)="onUsernameChange($event)"
       name="username"
       placeholder="Nombre de usuario"
+      autocomplete="username"
       required
     />
     <input
       [(ngModel)]="password"
-      (ngModelChange)="onPasswordChange($event)"
       name="password"
       type="password"
       placeholder="Contraseña"
+      autocomplete="current-password"
       required
     />
     <button type="submit">Iniciar sesión</button>
@@ -27,5 +27,5 @@
   <button (click)="logout()">Cerrar sesión</button>
   <button><a routerLink="/perfil">Perfil de usuario</a></button>
 </div>
-<p *ngIf="errorMessage">{{ errorMessage }}</p>
+<p class="error" *ngIf="errorMessage" id="error"> El los datos {{username}} y {{password}} {{ errorMessage }}</p>
 

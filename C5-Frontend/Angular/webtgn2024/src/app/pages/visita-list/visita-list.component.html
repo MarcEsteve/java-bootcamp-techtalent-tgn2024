@@ -1,0 +1,43 @@
+<div class="visita-list-container">
+    <h2>Lista de Visitas</h2>
+  
+    <ul>
+      <li *ngFor="let visita of visitas">
+        {{ visita.nombre }}
+        <button (click)="seleccionarVisita(visita)">Editar</button>
+        <button (click)="eliminarVisita(visita._id)">Eliminar</button>
+      </li>
+    </ul>
+  
+    <div>
+      <h3>Añadir Nueva Visita</h3>
+      <form (submit)="agregarVisita()">
+        <div>
+          <label>Nombre:</label>
+          <input type="text" [(ngModel)]="nuevaVisita.nombre" name="nombre" required>
+        </div>
+        <div>
+          <label>Password:</label>
+          <input type="password" [(ngModel)]="nuevaVisita.pass" name="pass" required>
+        </div>
+        <button type="submit">Guardar</button>
+      </form>
+    </div>
+  
+    <div *ngIf="visitaSeleccionada._id">
+      <h3>Editar Visita</h3>
+      <form (submit)="actualizarVisita()">
+        <div>
+          <label>Nombre:</label>
+          <input type="text" [(ngModel)]="visitaSeleccionada.nombre" name="nombre" required>
+        </div>
+        <div>
+          <label>Password:</label>
+          <input type="password" [(ngModel)]="visitaSeleccionada.pass" name="pass" required>
+        </div>
+        <button type="submit">Actualizar</button>
+      </form>
+    </div>
+  
+  </div>
+  

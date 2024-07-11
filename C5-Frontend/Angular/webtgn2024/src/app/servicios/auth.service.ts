@@ -21,7 +21,7 @@ export class AuthService {
   }
 
   login(username: string, password: string): boolean {
-    const user = this.users.find(user => user.usuario === username && user.pass === password);
+    const user = this.users.find(user => user.usuario === username && atob(user.pass) === password);
     // atob
     if (user) {
       this.cookieService.set('username', username, { expires: 2, sameSite: 'Lax' });

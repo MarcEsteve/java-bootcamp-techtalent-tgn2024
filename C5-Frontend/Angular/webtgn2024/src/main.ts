@@ -9,7 +9,3 @@ import { EmployeeListComponent } from './app/pages/employee-list/employee-list.c
 bootstrapApplication(AppComponent, appConfig).catch((err) =>
   console.error(err)
 );
-
-bootstrapApplication(EmployeeListComponent, {
-  providers: [provideHttpClient()],
-});

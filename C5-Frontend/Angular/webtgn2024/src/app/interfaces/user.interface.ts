@@ -1,4 +1,5 @@
 export interface User {
+  _id: number;
   usuario: string;
   pass: string;
   correo?: string;
