@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: calc(33.333% - 40px); /* Tres columnas, ajustando el ancho para el margen */
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.product-image {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.price-tag {
+  position: absolute;
+  top: 69%;
+  right: -13px;
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  transform: rotate(15deg);
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  animation: bounce 2s infinite;
+  border-radius: 15px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.buttons-row {
+  margin-top: 20px;
+}
+
+.buttons-row button {
+  background: #1d8acb; /* Cambiado el color del botón */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buttons-row button:hover {
+  background: #105a78; /* Color más oscuro para el hover */
+}

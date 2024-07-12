@@ -1,0 +1,46 @@
+/* Estilo para fijar el header en la parte superior */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegúrate de que el header se muestre sobre los demás contenidos */
+    background-color: #fff; /* O el color de fondo que prefieras */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: añade sombra para un mejor efecto visual */
+  }
+  
+  /* Ajustes adicionales para el contenedor principal si es necesario */
+  body {
+    margin-top: 70px; /* Ajusta según la altura de tu header */
+  }
+  
+  /* Tus estilos existentes */
+  .cesta {
+    background-color: #1d8acb;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .cesta .counter {
+    background-color: crimson;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  
+  .rk-menu__link {
+    padding-bottom: 1.2rem;
+  }
+  
+  .rk-container {
+    background-color: #1d8bcb13;
+  }
+  

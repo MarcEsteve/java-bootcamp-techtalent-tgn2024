@@ -20,6 +20,7 @@ import { CookieTestComponent } from './pages/cookie-test/cookie-test.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
+import { ProductosComponent } from './pages/productos/productos.component';
 
 export const routes: Routes = [
     {path: '', component: AboutComponent},
@@ -42,6 +43,7 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: 'perfil', component: PerfilComponent},
+    {path: 'productos', component: ProductosComponent},
     {path: 'about', redirectTo: '', pathMatch: 'full'},
     {path: '**', component: Pagina404Component}
 ];
