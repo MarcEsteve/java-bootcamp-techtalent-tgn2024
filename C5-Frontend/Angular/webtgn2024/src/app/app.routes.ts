@@ -21,6 +21,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { ProductosComponent } from './pages/productos/productos.component';
+import { MarcadorComponent } from './pages/nba/marcador/marcador.component';
 
 export const routes: Routes = [
     {path: '', component: AboutComponent},
@@ -44,6 +45,7 @@ export const routes: Routes = [
     {path: 'register', component: RegisterComponent},
     {path: 'perfil', component: PerfilComponent},
     {path: 'productos', component: ProductosComponent},
+    {path: 'marcador', component: MarcadorComponent},
     {path: 'about', redirectTo: '', pathMatch: 'full'},
     {path: '**', component: Pagina404Component}
 ];

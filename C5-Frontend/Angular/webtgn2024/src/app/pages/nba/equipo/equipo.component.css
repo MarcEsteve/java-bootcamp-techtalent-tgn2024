@@ -1,0 +1,522 @@
+
+
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #718096;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1d8acb;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+p {
+    line-height: 1.5;
+    margin: 12px 0;
+}
+
+b {
+    color: #1d8acb;
+}
+
+hr {
+    border: 0.5px solid rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+}
+
+ul {
+    margin-left: 12px;
+}
+
+li {
+    margin: 12px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+[routerLink] {
+    cursor: pointer;
+}
+
+/* Layout */
+
+
+.container {
+    max-width: 920px;
+    padding: 24px;
+    margin: 0 auto;
+}
+
+.container.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container.fade {
+    max-width: 920px;
+    padding: 24px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.container.show {
+    opacity: 1;
+}
+
+.card {
+    padding: 24px;
+    margin: 20px auto;
+    border: rgba(0,0,0,0.08);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+    background-color: white;
+}
+
+.card.xl {
+    max-width: 920px;
+}
+
+.card.l {
+    max-width: 720px;
+}
+
+.card.m {
+    max-width: 540px;
+}
+
+.card.s {
+    max-width: 240px;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #718096;
+    margin-right: 12px;
+    min-width: 120px;
+    text-align: center;
+    padding-bottom: 12px;
+    border-bottom: 2px solid white;
+}
+
+nav a.activo {
+    color: #287d78;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #1d8acb;
+}
+
+nav a:active,
+nav a:focus {
+    outline: none;
+}
+
+nav a:hover {
+    color: #287d78;
+    cursor: pointer;
+}
+
+.breadcrumb {
+    margin-bottom: 24px;
+}
+
+.breadcrumb span {
+    cursor: pointer;
+}
+
+.breadcrumb span.active {
+    color: #287d78;
+    cursor: default;
+}
+
+.titles-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Tablas */
+
+table {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+th {
+    padding: 10px 20px;
+    background-color: #1d8acb;
+    color: white;
+    text-align: left;
+}
+
+td {
+    padding: 10px 20px;
+    border: 1px solid #1d8acb;
+}
+
+.edit-table td:nth-child(4) {
+    padding: 10px 20px;
+    border: 1px solid #1d8acb;
+    background-color: #1d8acb;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-table td:nth-child(5) {
+    padding: 10px 20px;
+    border: 1px solid #FF5A5F;
+    background-color: #FF5A5F;
+    color: white;
+    cursor: pointer;
+}
+
+/* Formularios */
+
+button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px 0 20px 5px;
+    color: white;
+    background-color: #1d8acb;
+    border: #1d8acb solid 1px;
+    cursor: pointer;
+    transition: background-color 400ms ease-in-out;
+
+}
+
+button.outline {
+    background-color: white;
+    color: #1d8acb;
+    margin-right: 10px;
+}
+
+button.mini {
+    margin-left: 4px;
+}
+
+button:active,
+button:focus {
+    outline: none;
+    border: none;
+}
+
+button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #545353;
+}
+
+input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 12px 12px 0;
+    border: none;
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.08);
+    color: #6a6a6a;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+input:read-only {
+  outline: none;
+  background-color: rgb(212, 212, 212);
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+select {
+    -webkit-appearance: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 12px 12px 0;
+    border: none;
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.08);
+    border-radius: 0;
+    background-color: white;
+    color: #6a6a6a;
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+.alert {
+    color: #FF5A5F;
+}
+
+.valid {
+    color: #287d78;
+}
+
+
+
+
+/* Misc */
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.glosario {
+    color: #09615c;
+    font-weight: bold;
+    cursor: help;
+    position: relative;
+}
+
+.definicion  {
+    display: none;
+    border: 1px solid #287d78;
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    position: absolute;
+    top:  20px;
+    left: 20px;
+    animation-name: fadeOut;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+}
+
+.definicion.activo {
+    display: inline;
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+}
+
+
+.cesta {
+    background-color: #287d78;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+    position: relative;
+}
+
+.cesta .counter{
+    background-color: crimson;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+/* Estilos jugadores NBA*/
+
+
+/* Estilos jugadores NBA */
+
+.player-box {
+    height: 120px;
+    max-width: 720px;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.player-box.lakers {
+    border: 5px solid #552582;
+    color: #552582;
+    background-image: url('https://i.ibb.co/kScnyQC/lakers.png');
+    background-size: 100px 100px;
+}
+
+.player-box.celtics {
+    border: 5px solid #008348;
+    color: #008348;
+    background-image: url('https://i.ibb.co/vk7Ks0R/celtics.png');
+    background-size: 100px 100px;
+}
+
+.player-box.bulls {
+    border: 5px solid #CE1141;
+    color: #CE1141;
+    background-image: url('https://i.ibb.co/V9RKsVL/bulls.png');
+    background-size: 100px 100px;
+}
+
+.player-box.no-team {
+    border: 5px solid grey;
+    color: grey;
+}
+
+/* Marcador NBA */
+
+
+.marcador {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 80px;
+  }
+  .marcador .logo img {
+    width: 200px;
+    height: auto;
+  }
+  .marcador .puntos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .marcador .puntos img {
+    margin: 0 1rem;
+    height: 100px;
+  }
+  
+  .equipos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .equipos .equipo {
+    width: 50%;
+  }
+  
+  table {
+    width: 100%;
+  }
+  table.lakers tr:nth-child(even) {
+    background-color: #FDB927;
+    color: #552583;
+    font-size: 1.4rem;
+  }
+  table.lakers tr:nth-child(odd) {
+    background-color: #552583;
+    color: white;
+    font-size: 1.4rem;
+  }
+  table.celtics tr:nth-child(even) {
+    background-color: #BA8653;
+    color: #008248;
+    font-size: 1.4rem;
+  }
+  table.celtics tr:nth-child(odd) {
+    background-color: #008248;
+    color: white;
+    font-size: 1.4rem;
+  }
+  table td {
+    padding: 1rem;
+  }
+  table.lakers button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    background-color: white;
+    color: #552583;
+    border: 2px solid #552583;
+    cursor: pointer;
+  }
+  table.celtics button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    background-color: white;
+    color: #008248;
+    border: 2px solid #008248;
+    cursor: pointer;
+  }
+  
+  table.top-score {
+    width: 100%;
+    max-width: 640px;
+    margin: 1rem auto;
+  }
+  table.top-score h1 {
+    text-align: center;
+  }
+  table.top-score td {
+    border: 2px solid grey;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  table.top-score td:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  table.top-score td:nth-child(2) {
+    min-width: 100px;
+    text-align: right;
+    padding-right: 1rem;
+  }
+  table.top-score img {
+    height: 100px;
+  }
